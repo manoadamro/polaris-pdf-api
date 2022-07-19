@@ -1,0 +1,123 @@
+
+
+{
+    "aggregation_time": "2022-03-09T12:30:10.494+00:00",
+    "encounter": {
+        "admitted_at": "2019-01-01T00:00:00.000Z",
+        "created": "2022-03-09T12:30:09.379Z",
+        "deleted_at": null,
+        "dh_product": [
+            {
+                "uuid": "2d6a237d-6034-49a9-b3b0-97a81e49acfe"
+            }
+        ],
+        "discharged_at": null,
+        "encounter_type": "INPATIENT",
+        "epr_encounter_id": null,
+        "location_history": [],
+        "location_uuid": "f5921332-bb81-458d-b59e-bf121b4d67cf",
+        "patient_record_uuid": "d693d407-2bb3-4a04-876c-46a5544a932b",
+        "patient_uuid": "87f757ea-50c9-44ed-9fb8-61d9c396bc9a",
+        "score_system": "news2",
+        "score_system_history": [],
+        "spo2_scale": 1,
+        "uuid": "aeeb99de-1915-4235-8d16-88fd8e245f1c"
+    },
+    "patient": {
+        "uuid": "87f757ea-50c9-44ed-9fb8-61d9c396bc9a",
+        "first_name": "Laura",
+        "last_name": "Ward",
+        "hospital_number": "621654",
+        "nhs_number": "4516920107", 
+        "locations": ["static_location_uuid_L2"],
+        "allowed_to_text": true,
+        "record": {
+            "uuid": "d693d407-2bb3-4a04-876c-46a5544a932b"
+        },
+        "dh_products": [
+            {
+                "product_name": "SEND",
+                "uuid": "2d6a237d-6034-49a9-b3b0-97a81e49acfe"
+            }
+        ],
+        "sex": "248152002",
+        "dob": "2000-04-23"
+    },
+    "location": {
+        "active": true,
+        "address_line_1": null,
+        "address_line_2": null,
+        "address_line_3": null,
+        "address_line_4": null,
+        "country": null,
+        "created": "2022-03-09T12:30:09.054Z",
+        "created_by": "integration-tests",
+        "dh_products": [
+            {
+                "closed_date": null,
+                "created": "2022-03-09T12:30:09.064",
+                "opened_date": "2022-03-09",
+                "product_name": "SEND",
+                "uuid": "fae91ab6-74d9-42bf-8238-f834aaff3215"
+            }
+        ],
+        "display_name": "Orange Ward",
+        "locality": null,
+        "location_type": "225746001",
+        "modified": "2022-03-09T12:30:09.055Z",
+        "modified_by": "integration-tests",
+        "ods_code": "orange-ward",
+        "parent": null,
+        "postcode": null,
+        "region": null,
+        "uuid": "f5921332-bb81-458d-b59e-bf121b4d67cf"
+    },
+    "observation_sets": [
+        {
+            "created": "2021-10-21T07:11:34.335Z", 
+            "created_by": {
+                "uuid": "static_clinician_uuid_B", 
+                "first_name": "Hollie", 
+                "last_name": "White"
+            }, 
+            "empty_set": false, 
+            "encounter_id": "f646b905-130e-4f6d-b032-eb28fe2b67a2", 
+            "is_partial": true, 
+            "location": "d889014e-f483-4982-882e-765cfcdbf9e6", 
+            "modified": "2021-10-21T07:11:34.335Z", 
+            "modified_by": "static_clinician_uuid_B", 
+            "monitoring_instruction": "routine_monitoring", 
+            "observations": [{   
+                "created": "2019-03-04T11:53:22.349Z",
+                "created_by": {
+                    "first_name": "Stan",
+                    "last_name": "Lee",
+                    "uuid": "G"
+                },
+                "measured_time": "2019-03-03T21:09:22.207Z",
+                "modified": "2019-03-04T11:53:22.349Z",
+                "modified_by": {
+                    "first_name": "Stan",
+                    "last_name": "Lee",
+                    "uuid": "G"
+                },
+                "observation_metadata": null,
+                "observation_string": null,
+                "observation_type": "respiratory_rate",
+                "observation_unit": "/min",
+                "observation_value": 7.0,
+                "patient_refused": null,
+                "score_value": 3,
+                "uuid": "effba268-1b4a-405d-849c-6f860d4626a3"
+            }],
+            "record_time": "2019-02-18T12:05:22.207Z",
+            "score_severity": "high",
+            "score_string": "3",
+            "score_system": "news2",
+            "score_value": 3,
+            "spo2_scale": 1,
+            "time_next_obs_set_due": "2019-02-18T12:05:22.207Z",
+            "uuid": "2e64bb99-9b52-45bb-b135-790c6b7ff950"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+[paths]
+source =
+    dhos_pdf_api/*
+
+[report]
+
+omit =
+  **/__init__.py
+  **/__main__.py
+  dhos_pdf_api/app.py
+  dhos_pdf_api/config.py
+  dhos_pdf_api/autoapp.py
+
+fail_under = 95
+
+show_missing = true
+skip_covered = true

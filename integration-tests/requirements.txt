@@ -1,0 +1,13 @@
+assertpy
+behave
+black
+environs
+faker
+isort
+mypy
+pdfplumber
+python-dateutil
+python-jose==3.*
+reportportal-behave-client==1.*
+requests
+types-requests

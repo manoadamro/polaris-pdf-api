@@ -1,0 +1,5420 @@
+{
+  "patient": {
+    "accessibility_considerations": [],
+    "accessibility_considerations_other": null,
+    "allowed_to_email": null,
+    "allowed_to_text": false,
+    "bookmarked": false,
+    "clinician_bookmark": true,
+    "created": "2019-01-16T23:39:29.563Z",
+    "created_by": {
+      "first_name": "Hollie",
+      "last_name": "White",
+      "uuid": "B"
+    },
+    "dh_products": [],
+    "dob": "1985-07-01",
+    "dod": null,
+    "email_address": "Michele@email.com",
+    "ethnicity": "315279003",
+    "ethnicity_other": null,
+    "first_name": "Michele",
+    "has_been_bookmarked": false,
+    "highest_education_level": "473461003",
+    "highest_education_level_other": null,
+    "hospital_number": "27988932",
+    "last_name": "Haynes",
+    "locations": [
+      "B1-7"
+    ],
+    "modified": "2019-01-16T23:39:29.563Z",
+    "modified_by": {
+      "first_name": "Hollie",
+      "last_name": "White",
+      "uuid": "B"
+    },
+    "nhs_number": "9991677789",
+    "other_notes": "",
+    "personal_addresses": [],
+    "phone_number": "07123456789",
+    "record": {
+      "created": "2019-01-16T23:39:29.563Z",
+      "created_by": {
+        "first_name": "Hollie",
+        "last_name": "White",
+        "uuid": "B"
+      },
+      "diagnoses": [],
+      "history": {
+        "created": "2019-02-27T18:14:56.677Z",
+        "created_by": {
+          "first_name": "OJ",
+          "last_name": "Wolrab",
+          "uuid": "A"
+        },
+        "gravidity": null,
+        "modified": "2019-02-27T18:14:56.677Z",
+        "modified_by": {
+          "first_name": "OJ",
+          "last_name": "Wolrab",
+          "uuid": "A"
+        },
+        "parity": null,
+        "uuid": "15192a6a-2f74-4a41-b0b1-3d383c956cae"
+      },
+      "modified": "2019-01-16T23:39:29.563Z",
+      "modified_by": {
+        "first_name": "Hollie",
+        "last_name": "White",
+        "uuid": "B"
+      },
+      "notes": [],
+      "pregnancies": [],
+      "uuid": "83b4fee8-1e01-4693-828b-081a467c15ac",
+      "visits": []
+    },
+    "sex": "248152002",
+    "terms_agreement": null,
+    "uuid": "63f36afb-9894-40b7-ae8f-6452c807bf84"
+  },
+  "encounter": {
+    "admitted_at": "2019-01-25T00:00:00.000Z",
+    "created": "2019-02-27T18:15:15.842Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "deleted_at": null,
+    "dh_product": [
+      {
+        "created": "2019-01-16T23:39:29.563Z",
+        "created_by": {
+          "first_name": "Hollie",
+          "last_name": "White",
+          "uuid": "B"
+        },
+        "modified": "2019-01-16T23:39:29.563Z",
+        "modified_by": {
+          "first_name": "Hollie",
+          "last_name": "White",
+          "uuid": "B"
+        },
+        "uuid": "6ee32045-34b5-4dc7-90eb-8b7bdfdcb7f9"
+      }
+    ],
+    "discharged_at": null,
+    "encounter_type": "INPATIENT",
+    "epr_encounter_id": "2018L73782250",
+    "location_uuid": "B1-7",
+    "modified": "2019-02-27T18:15:15.842Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "patient_record_uuid": "83b4fee8-1e01-4693-828b-081a467c15ac",
+    "spo2_scale": 1,
+    "score_system_history": [{
+      "score_system": "news2",
+      "changed_time": "2019-03-03T07:00:00.207Z",
+      "spo2_scale": 2,
+      "changed_by": {"first_name": "Hank", "last_name": "Pym", "uuid": "AM"}
+    }],
+    "uuid": "6c5c7d62-68d4-424c-8e55-98df3fa4bb2f"
+  },
+  "location": {
+    "active": true,
+    "clinician_bookmark": false,
+    "display_name": "Sequoia Unit",
+    "location_type": "225746001",
+    "ods_code": "499WA",
+    "parent": {
+      "active": true,
+      "clinician_bookmark": false,
+      "display_name": "Birch Hospital",
+      "location_type": "22232009",
+      "ods_code": "123HO",
+      "uuid": "B1"
+    },
+    "uuid": "B1-7"
+  },
+  "observation_sets": [
+  {
+    "created": "2019-03-04T11:53:22.390Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:22.390Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:22.349Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:09:22.207Z",
+        "modified": "2019-03-04T11:53:22.349Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 7.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "effba268-1b4a-405d-849c-6f860d4626a3"
+      },
+      {
+        "created": "2019-03-04T11:53:22.346Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:09:22.207Z",
+        "modified": "2019-03-04T11:53:22.346Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 67.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "0ba269cf-48c3-4911-b317-ba8c092fa436"
+      },
+      {
+        "created": "2019-03-04T11:53:22.387Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:10:22.207Z",
+        "modified": "2019-03-04T11:53:22.387Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 90.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "af4d3b03-8469-45a9-9ab6-2f6f82def47d"
+      },
+      {
+        "created": "2019-03-04T11:53:22.368Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:10:22.207Z",
+        "modified": "2019-03-04T11:53:22.368Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.370Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.370Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "6c8c07e8-05b1-4011-88bc-8024f1ce3a83"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 140.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "57ed7395-2f1c-4084-98be-6d43a568dd68"
+      },
+      {
+        "created": "2019-03-04T11:53:22.377Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:10:22.207Z",
+        "modified": "2019-03-04T11:53:22.377Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.380Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.380Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "636dc077-3bde-4adc-93e1-8cac84589ab2"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 89.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "307a9e9f-bb88-48d4-9d6c-8e756af77c62"
+      },
+      {
+        "created": "2019-03-04T11:53:22.356Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:11:22.207Z",
+        "modified": "2019-03-04T11:53:22.356Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Voice",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "670edbc9-ccc3-40f8-b1cb-5ff967d74375"
+      },
+      {
+        "created": "2019-03-04T11:53:22.358Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:08:22.207Z",
+        "modified": "2019-03-04T11:53:22.358Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.361Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Venturi",
+          "mask_percent": 35,
+          "modified": "2019-03-04T11:53:22.361Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "eb1d7d8c-489a-447e-a905-70c089647c41"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 12.4,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "f570fa17-f275-4233-b1a9-571d63ee4456"
+      },
+      {
+        "created": "2019-03-04T11:53:22.351Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:11:22.207Z",
+        "modified": "2019-03-04T11:53:22.351Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Infection?",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "04163e7b-c2db-47a8-a135-b6d62d225a58"
+      },
+      {
+        "created": "2019-03-04T11:53:22.354Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T21:10:22.207Z",
+        "modified": "2019-03-04T11:53:22.354Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 38.1,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "7eca8d7b-d606-4e4b-be4e-38a44e83e1eb"
+      }
+    ],
+    "record_time": "2019-03-03T21:08:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 12,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-03-03T21:08:22.207Z",
+    "uuid": "437b06d2-3d82-40c6-aab6-0a89b4a56f2a"
+  },
+  {
+    "created": "2019-03-04T11:53:22.558Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:22.558Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:22.548Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:41:22.207Z",
+        "modified": "2019-03-04T11:53:22.548Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.551Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.551Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "603b2712-b082-4041-9054-2725dafe3cf1"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 172.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "76aad9e1-789a-43f7-af2b-b456825db38b"
+      },
+      {
+        "created": "2019-03-04T11:53:22.537Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:41:22.207Z",
+        "modified": "2019-03-04T11:53:22.537Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.540Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.540Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "c44ef65f-8ef7-4245-9566-906179d577b9"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 224.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "c69e88e1-d153-40f7-b27b-e6e0f91d4fec"
+      },
+      {
+        "created": "2019-03-04T11:53:22.535Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:42:22.207Z",
+        "modified": "2019-03-04T11:53:22.535Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 124.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "287a4524-1ac0-4f0b-8ad8-a2117d2cd002"
+      },
+      {
+        "created": "2019-03-04T11:53:22.517Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:42:22.207Z",
+        "modified": "2019-03-04T11:53:22.517Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 86.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "b83727ec-051f-4480-ab9b-bb04fdadc4b0"
+      },
+      {
+        "created": "2019-03-04T11:53:22.533Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:41:22.207Z",
+        "modified": "2019-03-04T11:53:22.533Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "509d4f1a-52dd-43aa-97e6-c47e01e2c1f7"
+      },
+      {
+        "created": "2019-03-04T11:53:22.525Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:44:22.207Z",
+        "modified": "2019-03-04T11:53:22.525Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.527Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Room Air",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.527Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "f7f304c3-8866-4a03-9c2b-6ecd148cfe1a"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 0.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "5b522c62-5583-4559-999f-919c6a2ede29"
+      },
+      {
+        "created": "2019-03-04T11:53:22.522Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:41:22.207Z",
+        "modified": "2019-03-04T11:53:22.522Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Unresponsive",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "e1a53ce9-96b3-4b2e-ae69-129d8b523979"
+      },
+      {
+        "created": "2019-03-04T11:53:22.520Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-03T07:41:22.207Z",
+        "modified": "2019-03-04T11:53:22.520Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 43.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "388bf092-04c3-466b-978e-93074ccd0ab3"
+      }
+    ],
+    "record_time": "2019-03-03T07:41:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 14,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-03-03T07:41:22.207Z",
+    "uuid": "9b4fb986-ae23-4153-a68c-47a8ee703a18"
+  },
+  {
+    "created": "2019-03-04T11:53:22.755Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:22.756Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:22.709Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:06:22.207Z",
+        "modified": "2019-03-04T11:53:22.710Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.712Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.712Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "612c4db6-dd68-4c01-a787-2802a3e64718"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 103.0,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "fb6e9977-3bd8-40fb-9e19-6d4e19c50e2e"
+      },
+      {
+        "created": "2019-03-04T11:53:22.732Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:08:22.207Z",
+        "modified": "2019-03-04T11:53:22.732Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.9,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "801680fd-d92c-44ae-a7bc-0e1c85df6aa0"
+      },
+      {
+        "created": "2019-03-04T11:53:22.734Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:06:22.207Z",
+        "modified": "2019-03-04T11:53:22.734Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Voice",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "52d109ce-8aea-4ca4-89fc-a24d1cd3b638"
+      },
+      {
+        "created": "2019-03-04T11:53:22.720Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:06:22.207Z",
+        "modified": "2019-03-04T11:53:22.720Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.722Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.723Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "eeeaddb0-d7e3-4ca2-bbea-66a7b763278c"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 44.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "e9e4b11e-4ab0-421c-812c-a57edf213969"
+      },
+      {
+        "created": "2019-03-04T11:53:22.729Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:08:22.207Z",
+        "modified": "2019-03-04T11:53:22.729Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 34.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "0ec98470-5d48-49d3-88a2-fc40dd2ae664"
+      },
+      {
+        "created": "2019-03-04T11:53:22.751Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:05:22.207Z",
+        "modified": "2019-03-04T11:53:22.751Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 179.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "50f48486-3eca-4cd4-b28e-8c7ce7a8b7d8"
+      },
+      {
+        "created": "2019-03-04T11:53:22.753Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:07:22.207Z",
+        "modified": "2019-03-04T11:53:22.753Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 92.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "fe8848d4-e334-4104-bccf-1c8c5b8e1a74"
+      },
+      {
+        "created": "2019-03-04T11:53:22.737Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:05:22.207Z",
+        "modified": "2019-03-04T11:53:22.737Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Diarrhoea/Vomiting",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "ede60ead-f8ec-4551-912c-ce9cf0d22108"
+      },
+      {
+        "created": "2019-03-04T11:53:22.739Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-02T21:06:22.207Z",
+        "modified": "2019-03-04T11:53:22.739Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.743Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Nasal Cann.",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.743Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "7ef703d7-699d-4230-8851-62720c3caf13"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 5.9,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "ab2c219c-4f90-42cf-a6cf-670c6fa76182"
+      }
+    ],
+    "record_time": "2019-03-02T21:05:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 14,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-03-02T21:05:22.207Z",
+    "uuid": "d4419a35-b7a8-42de-9fc1-d2b3f0ee3e04"
+  },
+  {
+    "created": "2019-03-04T11:53:22.948Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:22.948Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:22.935Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:17:22.207Z",
+        "modified": "2019-03-04T11:53:22.935Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Self Harm",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "7cd8fde8-36d6-40e0-aa5d-a63cd639601d"
+      },
+      {
+        "created": "2019-03-04T11:53:22.937Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:18:22.207Z",
+        "modified": "2019-03-04T11:53:22.937Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.939Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Room Air",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.939Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "5e04a783-f884-47ce-9a3e-19299ef49c73"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 0.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "329a3e22-d67e-43c8-9966-2a94c74454f5"
+      },
+      {
+        "created": "2019-03-04T11:53:22.930Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:15:22.207Z",
+        "modified": "2019-03-04T11:53:22.931Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "a5dd1446-4807-40a4-b1e0-5adfba31ad3b"
+      },
+      {
+        "created": "2019-03-04T11:53:22.933Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:15:22.207Z",
+        "modified": "2019-03-04T11:53:22.933Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 57.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "7c8e2c9d-0c42-4012-9d7e-0bdf1ac16a62"
+      },
+      {
+        "created": "2019-03-04T11:53:22.919Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:17:22.207Z",
+        "modified": "2019-03-04T11:53:22.919Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.921Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.921Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "8da511d1-0f56-4db0-8ef5-8e8ce230c84a"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 113.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "90eaa169-72b5-466b-8d6e-a01ff57636e6"
+      },
+      {
+        "created": "2019-03-04T11:53:22.928Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:18:22.207Z",
+        "modified": "2019-03-04T11:53:22.928Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 91.0,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "2329e6d2-5313-4785-8d95-b7df27e67211"
+      },
+      {
+        "created": "2019-03-04T11:53:22.907Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:17:22.207Z",
+        "modified": "2019-03-04T11:53:22.907Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 34.5,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "f65f4c01-24b5-4e78-802d-6b11848813fc"
+      },
+      {
+        "created": "2019-03-04T11:53:22.946Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:16:22.207Z",
+        "modified": "2019-03-04T11:53:22.946Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 97.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "1a335bdc-df9c-4ba1-a8ff-c86890cbca4f"
+      },
+      {
+        "created": "2019-03-04T11:53:22.910Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-03-01T00:17:22.207Z",
+        "modified": "2019-03-04T11:53:22.910Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:22.912Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:22.912Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "356f766b-cb6e-43bc-b873-1a728016f036"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 160.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "df00f39e-745c-4962-905a-743c57925c9f"
+      }
+    ],
+    "record_time": "2019-03-01T00:15:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 10,
+    "spo2_scale": 2,
+    "time_next_obs_set_due": "2019-03-01T00:15:22.207Z",
+    "uuid": "acb4b49b-a659-46fd-8df3-85bf99598ff3"
+  },
+  {
+    "created": "2019-03-04T11:53:23.144Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:23.144Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:23.141Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:23:22.207Z",
+        "modified": "2019-03-04T11:53:23.141Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "82e3be79-7348-41cd-ba31-6bdda4afda78"
+      },
+      {
+        "created": "2019-03-04T11:53:23.105Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:23:22.207Z",
+        "modified": "2019-03-04T11:53:23.105Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.107Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.107Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "69d7cd5e-0897-4c23-b135-4e24facdec1b"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 153.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "f5a016ce-1d5b-471b-a0fa-bed4d483961c"
+      },
+      {
+        "created": "2019-03-04T11:53:23.114Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:23:22.207Z",
+        "modified": "2019-03-04T11:53:23.114Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.116Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.116Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "611b4ccb-7caa-47a1-83c1-eb37762ef5d1"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 109.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "59c904d6-096e-449d-a227-50d0a92eb9e4"
+      },
+      {
+        "created": "2019-03-04T11:53:23.102Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:24:22.207Z",
+        "modified": "2019-03-04T11:53:23.102Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Confusion",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "de72240c-b1df-44ab-a4ef-896e8137afaf"
+      },
+      {
+        "created": "2019-03-04T11:53:23.130Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:23:22.207Z",
+        "modified": "2019-03-04T11:53:23.130Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.133Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Simple",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.133Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "a1e1f78e-eef1-4f72-a2d0-173e2e1d1859"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 14.2,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "a6e993d1-0934-435f-acea-eb4da7d1bd25"
+      },
+      {
+        "created": "2019-03-04T11:53:23.139Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:22:22.207Z",
+        "modified": "2019-03-04T11:53:23.139Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 12.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "2540bf2b-705b-42dd-bb82-c56718ba0fdc"
+      },
+      {
+        "created": "2019-03-04T11:53:23.126Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:24:22.207Z",
+        "modified": "2019-03-04T11:53:23.126Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 39.9,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "d161e511-b82a-44fd-b5b1-0875b860bdfa"
+      },
+      {
+        "created": "2019-03-04T11:53:23.128Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-28T10:23:22.207Z",
+        "modified": "2019-03-04T11:53:23.128Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 180.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "89178d6a-0b8c-4d11-84ba-69b545922351"
+      }
+    ],
+    "record_time": "2019-02-28T10:21:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 10,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-28T10:21:22.207Z",
+    "uuid": "6d8feb23-5786-4c59-90b9-c5e322b32118"
+  },
+  {
+    "created": "2019-03-04T11:53:23.347Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:23.347Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:23.301Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:34:22.207Z",
+        "modified": "2019-03-04T11:53:23.301Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 107.0,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "f7edfa75-8b4d-4953-8062-e4381a4252a8"
+      },
+      {
+        "created": "2019-03-04T11:53:23.299Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:35:22.207Z",
+        "modified": "2019-03-04T11:53:23.299Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Unresponsive",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "6f70d6a9-3f66-42c1-9901-2dc4e8f2c4e5"
+      },
+      {
+        "created": "2019-03-04T11:53:23.296Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.296Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 35.9,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "30c2a4ed-a524-4926-92d4-e0eaec4db18f"
+      },
+      {
+        "created": "2019-03-04T11:53:23.329Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.329Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 24.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "29ffc401-61c2-469a-aec6-9e14bf113578"
+      },
+      {
+        "created": "2019-03-04T11:53:23.326Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:36:22.207Z",
+        "modified": "2019-03-04T11:53:23.326Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 89.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "97c8730c-ca3e-41d0-ab49-bbbfeb778689"
+      },
+      {
+        "created": "2019-03-04T11:53:23.313Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.313Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.317Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.317Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "d9905a22-c042-4698-ba11-b4c0c20dcae7"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 111.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "14c6cf37-6ed6-4157-b648-7f58bfceae58"
+      },
+      {
+        "created": "2019-03-04T11:53:23.303Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.304Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.306Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.306Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "3235b501-6794-4ab8-bc43-51a589c4b91b"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 166.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "d5f9b7cf-e5eb-4029-a200-ca3f14ed7b68"
+      },
+      {
+        "created": "2019-03-04T11:53:23.332Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-27T16:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.332Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.339Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Simple",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.339Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "92f963a1-1fab-43f3-a35a-7bb39d19b4d9"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 5.3,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "5ee02b95-68fa-415e-910a-8b66695e1564"
+      }
+    ],
+    "record_time": "2019-02-27T16:34:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 12,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-27T16:34:22.207Z",
+    "uuid": "f0fbc17e-c1ca-483e-8879-583dbb19fda0"
+  },
+  {
+    "created": "2019-03-04T11:53:23.529Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:23.529Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:23.493Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:34:22.207Z",
+        "modified": "2019-03-04T11:53:23.493Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 63.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "9a42f8c5-c692-4c52-a76a-95a76efe73b5"
+      },
+      {
+        "created": "2019-03-04T11:53:23.495Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.495Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.498Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.498Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "4bb48129-13ce-4af3-bd7d-ab289be107a7"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 81.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "1e703902-191b-4eca-a3f1-39c0388db151"
+      },
+      {
+        "created": "2019-03-04T11:53:23.507Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:37:22.207Z",
+        "modified": "2019-03-04T11:53:23.507Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": null,
+        "uuid": "3e0dbee6-8eea-4e25-8a2f-c1cd1b46b0b2"
+      },
+      {
+        "created": "2019-03-04T11:53:23.509Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:36:22.207Z",
+        "modified": "2019-03-04T11:53:23.509Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Confusion",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "e34eeb9f-8568-458c-bef4-95b5fcb8ce27"
+      },
+      {
+        "created": "2019-03-04T11:53:23.512Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:36:22.207Z",
+        "modified": "2019-03-04T11:53:23.512Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.7,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "e906ca02-c7df-4460-a062-f0fc6ca7f746"
+      },
+      {
+        "created": "2019-03-04T11:53:23.514Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:34:22.207Z",
+        "modified": "2019-03-04T11:53:23.514Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.516Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Simple",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.516Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "c78569f3-b7c3-4b58-8fc8-0a7320b4275b"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 9.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "8ac4c6a4-03f1-47e1-b0f7-dbac39c41f2f"
+      },
+      {
+        "created": "2019-03-04T11:53:23.523Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:35:22.207Z",
+        "modified": "2019-03-04T11:53:23.523Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Abnormal Electrolyte/BG",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "24f69d17-c2ff-47e1-9c51-54aa5e14981e"
+      },
+      {
+        "created": "2019-03-04T11:53:23.525Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:35:22.207Z",
+        "modified": "2019-03-04T11:53:23.525Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 80.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "ffa8446b-4c6f-4989-a789-e6cd1a7a005a"
+      },
+      {
+        "created": "2019-03-04T11:53:23.527Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T20:36:22.207Z",
+        "modified": "2019-03-04T11:53:23.527Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 58.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "c983bee7-61ce-41ee-944e-ba7b3c33c9c0"
+      }
+    ],
+    "record_time": "2019-02-26T20:34:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 14,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-26T20:34:22.207Z",
+    "uuid": "50626a37-1f20-4463-ad9c-4a636f420e22"
+  },
+  {
+    "created": "2019-03-04T11:53:23.699Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:23.699Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:23.660Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:27:22.207Z",
+        "modified": "2019-03-04T11:53:23.660Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 24.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "fe130da9-5d1a-462a-9f9d-cb2267996e1a"
+      },
+      {
+        "created": "2019-03-04T11:53:23.656Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:29:22.207Z",
+        "modified": "2019-03-04T11:53:23.656Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "8f189266-cd37-4736-888c-df94f7e87315"
+      },
+      {
+        "created": "2019-03-04T11:53:23.665Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:29:22.207Z",
+        "modified": "2019-03-04T11:53:23.665Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "b2b4244f-ca33-4b74-9e6e-5fbdbbb9e899"
+      },
+      {
+        "created": "2019-03-04T11:53:23.663Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:30:22.207Z",
+        "modified": "2019-03-04T11:53:23.663Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 39.4,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "3ea2f80b-4540-4d7b-8737-a27fe79295a9"
+      },
+      {
+        "created": "2019-03-04T11:53:23.676Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:30:22.207Z",
+        "modified": "2019-03-04T11:53:23.676Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.678Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.678Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "acdefba8-529f-4bf4-ad23-c32048724b5a"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 154.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "6d9f337f-7194-4733-ab52-536c2b41804c"
+      },
+      {
+        "created": "2019-03-04T11:53:23.667Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:30:22.207Z",
+        "modified": "2019-03-04T11:53:23.667Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.669Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.669Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "31dfc492-db9f-48c8-991f-a403808a480d"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 194.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "d1795d8e-9177-41ce-aa12-d3f29b1f4d60"
+      },
+      {
+        "created": "2019-03-04T11:53:23.694Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:30:22.207Z",
+        "modified": "2019-03-04T11:53:23.694Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": null,
+        "uuid": "2d443289-7426-4a03-9355-833d7029c634"
+      },
+      {
+        "created": "2019-03-04T11:53:23.685Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:29:22.207Z",
+        "modified": "2019-03-04T11:53:23.685Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.687Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Room Air",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.687Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "a7648337-d130-4dfd-81ae-309a1d616ee1"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 0.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "d84b867c-5809-4c93-b596-161e9ac84637"
+      },
+      {
+        "created": "2019-03-04T11:53:23.697Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-26T06:27:22.207Z",
+        "modified": "2019-03-04T11:53:23.697Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 85.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "42de592a-334b-452b-b6a6-c04e9794548f"
+      }
+    ],
+    "record_time": "2019-02-26T06:27:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 10,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-26T06:27:22.207Z",
+    "uuid": "40cd4c78-9ee0-405b-9c49-ec5ac93a1962"
+  },
+  {
+    "created": "2019-03-04T11:53:23.859Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:23.859Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:23.857Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:18:22.207Z",
+        "modified": "2019-03-04T11:53:23.857Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 39.8,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "654c5f86-9b9d-46b5-bed0-778d51b51dbf"
+      },
+      {
+        "created": "2019-03-04T11:53:23.853Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:19:22.207Z",
+        "modified": "2019-03-04T11:53:23.853Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 29.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "39dda466-d3f9-4672-b1fb-87b1d0c10bda"
+      },
+      {
+        "created": "2019-03-04T11:53:23.855Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:16:22.207Z",
+        "modified": "2019-03-04T11:53:23.855Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 124.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "af80d9b9-2ee0-44f2-949a-6b23135caa9a"
+      },
+      {
+        "created": "2019-03-04T11:53:23.848Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:16:22.207Z",
+        "modified": "2019-03-04T11:53:23.848Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 87.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "51d3bc2d-6531-4a14-a722-28237818a39c"
+      },
+      {
+        "created": "2019-03-04T11:53:23.851Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:16:22.207Z",
+        "modified": "2019-03-04T11:53:23.851Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "7f3a71a1-d1bc-411a-95cb-2413bd26bc29"
+      },
+      {
+        "created": "2019-03-04T11:53:23.827Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:16:22.207Z",
+        "modified": "2019-03-04T11:53:23.827Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.830Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Nasal Cann.",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.830Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "40d29f38-3768-4813-b80c-78ccb9f3817b"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 11.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "e91a66e9-55eb-4d94-b8be-c05a9139a36f"
+      },
+      {
+        "created": "2019-03-04T11:53:23.838Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T19:16:22.207Z",
+        "modified": "2019-03-04T11:53:23.838Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:23.840Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:23.840Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "f718a948-be36-477e-9be1-0e75263ee373"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 202.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "71bb4441-b38e-4875-aa15-25c532720e8b"
+      }
+    ],
+    "record_time": "2019-02-25T19:16:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 15,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-25T19:16:22.207Z",
+    "uuid": "22dda3bf-65dc-4612-961d-cc1c9b5c54de"
+  },
+  {
+    "created": "2019-03-04T11:53:24.044Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:24.044Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:24.042Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:32:22.207Z",
+        "modified": "2019-03-04T11:53:24.042Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "e4e27a1d-512b-47f4-9bfa-2d0f9a3cb75e"
+      },
+      {
+        "created": "2019-03-04T11:53:24.040Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:30:22.207Z",
+        "modified": "2019-03-04T11:53:24.040Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 80.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "7015b8d6-9f7f-466d-84a7-2b8a6f3f529e"
+      },
+      {
+        "created": "2019-03-04T11:53:24.038Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:29:22.207Z",
+        "modified": "2019-03-04T11:53:24.038Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 39.4,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "65c2ad1b-2c0f-4643-948a-af6f455912f4"
+      },
+      {
+        "created": "2019-03-04T11:53:24.033Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:29:22.207Z",
+        "modified": "2019-03-04T11:53:24.033Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Self Harm",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "f14d4dd2-668e-4a99-9938-458ae29fe163"
+      },
+      {
+        "created": "2019-03-04T11:53:24.035Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:32:22.207Z",
+        "modified": "2019-03-04T11:53:24.035Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Confusion",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "60ffff4f-7fff-4f53-8b4e-65e1706a14df"
+      },
+      {
+        "created": "2019-03-04T11:53:24.020Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:31:22.207Z",
+        "modified": "2019-03-04T11:53:24.020Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "def94eec-83dd-4407-b82c-5ebf27970d4a"
+      },
+      {
+        "created": "2019-03-04T11:53:24.023Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:31:22.207Z",
+        "modified": "2019-03-04T11:53:24.023Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.025Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.025Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "c7d58b33-0326-40b5-bf6e-a3a0ed4d7205"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 54.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "ba93802f-3e2e-426b-a12c-cbb9027cbae0"
+      },
+      {
+        "created": "2019-03-04T11:53:23.997Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:32:22.207Z",
+        "modified": "2019-03-04T11:53:23.997Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.000Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Resv Mask",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.000Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "b5f52f7a-6ad6-401d-8efd-6dea5f32fd6c"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 2.7,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "8fb66dcd-9d8a-4aa6-a14b-56f722db8863"
+      },
+      {
+        "created": "2019-03-04T11:53:24.018Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-25T02:29:22.207Z",
+        "modified": "2019-03-04T11:53:24.018Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 122.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "f6423993-f198-4c19-bb8b-82105e617053"
+      }
+    ],
+    "record_time": "2019-02-25T02:29:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 12,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-25T02:29:22.207Z",
+    "uuid": "7cb9b968-d891-47c0-8356-59df777a549a"
+  },
+  {
+    "created": "2019-03-04T11:53:24.243Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:24.243Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:24.196Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:57:22.207Z",
+        "modified": "2019-03-04T11:53:24.196Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.4,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "7bd66156-1f28-4495-9df3-dfd96c14443c"
+      },
+      {
+        "created": "2019-03-04T11:53:24.234Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:57:22.207Z",
+        "modified": "2019-03-04T11:53:24.234Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.236Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "CPAP",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.236Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "1e3f4f8d-54e7-45eb-9e92-02c63cdc2f02"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 5.7,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "b9a1e8c2-43d2-4aaf-9267-d3790d60737a"
+      },
+      {
+        "created": "2019-03-04T11:53:24.224Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:58:22.207Z",
+        "modified": "2019-03-04T11:53:24.224Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.227Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.227Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "0afb1622-1e95-4ade-a746-f1a0bb1bf466"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 88.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "2c73d52d-2a8a-433f-b7ef-d663719fe891"
+      },
+      {
+        "created": "2019-03-04T11:53:24.213Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:58:22.207Z",
+        "modified": "2019-03-04T11:53:24.213Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.216Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.216Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "7bc03771-2995-4359-afdc-ecc2d791f205"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 141.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "ca6882d3-9c8b-4006-abe9-13702c9366c0"
+      },
+      {
+        "created": "2019-03-04T11:53:24.210Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:57:22.207Z",
+        "modified": "2019-03-04T11:53:24.210Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 97.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "c70d7c74-77bc-4218-ac0b-d2dd78ceb044"
+      },
+      {
+        "created": "2019-03-04T11:53:24.208Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:57:22.207Z",
+        "modified": "2019-03-04T11:53:24.208Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 109.0,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "4c5af7ef-b0f3-40df-a110-1c3b876276a8"
+      },
+      {
+        "created": "2019-03-04T11:53:24.204Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:58:22.207Z",
+        "modified": "2019-03-04T11:53:24.204Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 32.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "64a04d95-f576-4346-9ee8-3a9fe3e4841f"
+      },
+      {
+        "created": "2019-03-04T11:53:24.202Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:59:22.207Z",
+        "modified": "2019-03-04T11:53:24.202Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Voice",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "10bfdb09-040e-4892-8da6-f0a0a61e6ac0"
+      },
+      {
+        "created": "2019-03-04T11:53:24.199Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T15:56:22.207Z",
+        "modified": "2019-03-04T11:53:24.199Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Infection?",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "8234c468-022f-4f71-9efc-dbf92d9bea5d"
+      }
+    ],
+    "record_time": "2019-02-24T15:56:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 9,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-24T15:56:22.207Z",
+    "uuid": "dc7dcd0a-387e-4e2e-beb2-242e22c12272"
+  },
+  {
+    "created": "2019-03-04T11:53:24.453Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:24.453Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:24.412Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:13:22.207Z",
+        "modified": "2019-03-04T11:53:24.412Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "b7ae43ab-d9f3-4192-8948-44698b9d7df1"
+      },
+      {
+        "created": "2019-03-04T11:53:24.415Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:13:22.207Z",
+        "modified": "2019-03-04T11:53:24.415Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.420Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.420Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "f9bc91a5-0307-4da2-9af0-e7202f7b3d31"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 60.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "042617ce-9382-4fc1-a4bb-8543ed3e4cdc"
+      },
+      {
+        "created": "2019-03-04T11:53:24.429Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:16:22.207Z",
+        "modified": "2019-03-04T11:53:24.430Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 120.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "b38231e7-3c68-4df4-8e2b-93151d3d9a2e"
+      },
+      {
+        "created": "2019-03-04T11:53:24.432Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:15:22.207Z",
+        "modified": "2019-03-04T11:53:24.432Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "117ddb90-a4c1-4e8e-9b37-9ec6aad34f25"
+      },
+      {
+        "created": "2019-03-04T11:53:24.408Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:16:22.207Z",
+        "modified": "2019-03-04T11:53:24.409Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 90.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "7f9bc34b-f018-487c-a9d1-bf11e7c2208d"
+      },
+      {
+        "created": "2019-03-04T11:53:24.435Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:16:22.207Z",
+        "modified": "2019-03-04T11:53:24.435Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.439Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "High Flow",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.439Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "f98e419a-2243-4bb7-9809-022a485f3317"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "%",
+        "observation_value": 34.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "81b62a71-29c1-41be-b633-70d92b817483"
+      },
+      {
+        "created": "2019-03-04T11:53:24.447Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:13:22.207Z",
+        "modified": "2019-03-04T11:53:24.447Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.9,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "e59c046e-546b-476f-a1fa-672cd541693c"
+      },
+      {
+        "created": "2019-03-04T11:53:24.450Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-24T03:16:22.207Z",
+        "modified": "2019-03-04T11:53:24.450Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 36.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "e1d55630-f8a3-42ed-8f01-54104ed33a64"
+      }
+    ],
+    "record_time": "2019-02-24T03:13:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 13,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-24T03:13:22.207Z",
+    "uuid": "1043731d-f028-4f50-9aa6-16464abfa1b8"
+  },
+  {
+    "created": "2019-03-04T11:53:24.699Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:24.699Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:24.687Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:44:22.207Z",
+        "modified": "2019-03-04T11:53:24.687Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 83.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "1ebd11c6-0329-4dd9-8533-b2c4b9c93d6a"
+      },
+      {
+        "created": "2019-03-04T11:53:24.676Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:43:22.207Z",
+        "modified": "2019-03-04T11:53:24.676Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.678Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Simple",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.678Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "a9cbe552-fefc-4547-a5d4-7c61be9b8889"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 6.9,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "6b4bd3ec-7e17-412a-8c78-9812e8d2fb89"
+      },
+      {
+        "created": "2019-03-04T11:53:24.695Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.695Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Shock (HR > BP)",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "01ae3ad7-b915-46e2-875c-4843bbc91575"
+      },
+      {
+        "created": "2019-03-04T11:53:24.692Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.692Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 86.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "a3ed02ce-ed85-4ebd-bdad-56d4c34453e0"
+      },
+      {
+        "created": "2019-03-04T11:53:24.651Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.651Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.659Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.659Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "3c566906-bf6e-4499-9781-8e42faadb47e"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 38.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "4101b1cb-fc90-4730-9c11-13316895b265"
+      },
+      {
+        "created": "2019-03-04T11:53:24.638Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.638Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.641Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.641Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "641013d0-1856-4432-83b8-f4f693d0416d"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 82.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "16caf5eb-381d-492b-86ea-8ceb54ee99c3"
+      },
+      {
+        "created": "2019-03-04T11:53:24.673Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.673Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 7.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "c64cead1-066a-4194-bd96-488b2557386b"
+      },
+      {
+        "created": "2019-03-04T11:53:24.670Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:43:22.207Z",
+        "modified": "2019-03-04T11:53:24.670Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "e014036d-eace-4515-8bca-a04f5219681c"
+      },
+      {
+        "created": "2019-03-04T11:53:24.635Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-23T03:45:22.207Z",
+        "modified": "2019-03-04T11:53:24.635Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 38.9,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "28408590-8ec8-4b31-a123-2c02b6468fd8"
+      }
+    ],
+    "record_time": "2019-02-23T03:43:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 15,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-23T03:43:22.207Z",
+    "uuid": "462c3b6f-7283-4a34-8d25-c3ee6e64f5de"
+  },
+  {
+    "created": "2019-03-04T11:53:24.932Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:24.932Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:24.885Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:20:22.207Z",
+        "modified": "2019-03-04T11:53:24.885Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.888Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Resv Mask",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.888Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "9ef26713-3f0a-4730-9e44-b82ca1ae74e5"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 11.7,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "349227da-2377-472f-b8bd-db9605b4564d"
+      },
+      {
+        "created": "2019-03-04T11:53:24.927Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:23:22.207Z",
+        "modified": "2019-03-04T11:53:24.927Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 100.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "84521262-fb84-4d10-9bc2-38329d7fb776"
+      },
+      {
+        "created": "2019-03-04T11:53:24.881Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:23:22.207Z",
+        "modified": "2019-03-04T11:53:24.881Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 47.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "3b7a7511-af4d-475f-8b5b-9d2d6dcdc4f6"
+      },
+      {
+        "created": "2019-03-04T11:53:24.924Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:22:22.207Z",
+        "modified": "2019-03-04T11:53:24.924Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "c68910b6-25b9-4884-b405-9e8b52f44b35"
+      },
+      {
+        "created": "2019-03-04T11:53:24.899Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:23:22.207Z",
+        "modified": "2019-03-04T11:53:24.899Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.902Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.902Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "5c994b8b-accb-4530-a4f5-970b0b1cbb9f"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 230.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "69a2c4e7-3da6-404d-ba1d-8cc0cc758053"
+      },
+      {
+        "created": "2019-03-04T11:53:24.922Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:20:22.207Z",
+        "modified": "2019-03-04T11:53:24.922Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 60.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "5b86bd5a-a713-42eb-af34-507185c9f7f0"
+      },
+      {
+        "created": "2019-03-04T11:53:24.896Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:22:22.207Z",
+        "modified": "2019-03-04T11:53:24.896Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 39.7,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "236f9a10-1875-4cb0-b0e4-409efa76f528"
+      },
+      {
+        "created": "2019-03-04T11:53:24.910Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:23:22.207Z",
+        "modified": "2019-03-04T11:53:24.910Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:24.913Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:24.913Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "1ca30206-e808-4a07-b986-6bff8593b2a1"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 188.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "60ff3316-a6f1-4c48-9125-98a83f3da108"
+      },
+      {
+        "created": "2019-03-04T11:53:24.930Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-22T11:21:22.207Z",
+        "modified": "2019-03-04T11:53:24.930Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Shock (HR > BP)",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "d94b1ac7-dc77-48cc-b47f-52585599b64b"
+      }
+    ],
+    "record_time": "2019-02-22T11:20:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 13,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-22T11:20:22.207Z",
+    "uuid": "f09f0188-ae99-426b-9ec2-38594c3e89ea"
+  },
+  {
+    "created": "2019-03-04T11:53:25.110Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:25.110Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:25.083Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:07:22.207Z",
+        "modified": "2019-03-04T11:53:25.083Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 56.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "5fbbab74-10a3-4d3a-986a-95e3e1f5267e"
+      },
+      {
+        "created": "2019-03-04T11:53:25.073Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:09:22.207Z",
+        "modified": "2019-03-04T11:53:25.073Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.075Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.075Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "77996582-0346-462a-93b9-6ae3b696e6d8"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 167.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "812060cc-8a05-4f70-a86f-76b7826504be"
+      },
+      {
+        "created": "2019-03-04T11:53:25.063Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:09:22.207Z",
+        "modified": "2019-03-04T11:53:25.063Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.066Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.066Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "f5a08b01-5d46-44f8-a112-7be9893c73e1"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 222.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "2c926a5e-bfdb-4490-8976-02615a229f5e"
+      },
+      {
+        "created": "2019-03-04T11:53:25.105Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:09:22.207Z",
+        "modified": "2019-03-04T11:53:25.105Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 166.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "b294e763-1438-4fc4-bbd3-5060e7ed786c"
+      },
+      {
+        "created": "2019-03-04T11:53:25.092Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:06:22.207Z",
+        "modified": "2019-03-04T11:53:25.092Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.095Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "High Flow",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.095Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "e96a7565-05c0-450f-9500-9b76cc402eba"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "%",
+        "observation_value": 87.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "749ad1ab-ba1a-469d-b7fd-48e3a49bcae0"
+      },
+      {
+        "created": "2019-03-04T11:53:25.089Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:09:22.207Z",
+        "modified": "2019-03-04T11:53:25.089Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 93.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "7124cfeb-79f4-430d-979f-3b9071bede2e"
+      },
+      {
+        "created": "2019-03-04T11:53:25.087Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:07:22.207Z",
+        "modified": "2019-03-04T11:53:25.087Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 35.3,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "7b061169-4295-46bc-8a2f-cd9648e01525"
+      },
+      {
+        "created": "2019-03-04T11:53:25.108Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-21T19:07:22.207Z",
+        "modified": "2019-03-04T11:53:25.108Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Voice",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "d827d8ff-a974-470c-882c-ae39fc9cdc69"
+      }
+    ],
+    "record_time": "2019-02-21T19:06:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 17,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-21T19:06:22.207Z",
+    "uuid": "804ff6dd-875d-43f6-92c4-b00f24c35cde"
+  },
+  {
+    "created": "2019-03-04T11:53:25.325Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:25.325Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:25.307Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:00:22.207Z",
+        "modified": "2019-03-04T11:53:25.307Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 100.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "830d0ef5-4c12-408f-ac4f-a9ec867f3081"
+      },
+      {
+        "created": "2019-03-04T11:53:25.309Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:00:22.207Z",
+        "modified": "2019-03-04T11:53:25.309Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Airway Compromise",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "26e7800b-dc8d-4ed8-8dc1-ee15d06d6135"
+      },
+      {
+        "created": "2019-03-04T11:53:25.282Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:00:22.207Z",
+        "modified": "2019-03-04T11:53:25.282Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.284Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.284Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "b704f0f8-44b5-4252-8f27-053430fac67c"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 221.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "b3e7bb44-2b6f-4b8c-aa17-a6b70cc3a091"
+      },
+      {
+        "created": "2019-03-04T11:53:25.292Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:00:22.207Z",
+        "modified": "2019-03-04T11:53:25.292Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.296Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.296Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "d421024f-8dd2-4243-9ff6-b94d1495b143"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 176.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "5b704d6a-f906-4c17-9bd7-4cd0e54308a6"
+      },
+      {
+        "created": "2019-03-04T11:53:25.316Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:00:22.207Z",
+        "modified": "2019-03-04T11:53:25.317Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.318Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Resv Mask",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.319Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "0580a861-81a5-4ff5-a6d6-be514fdcca85"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 2.3,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "f2cf7a68-e519-4eb6-b281-6edd629e00c3"
+      },
+      {
+        "created": "2019-03-04T11:53:25.312Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:01:22.207Z",
+        "modified": "2019-03-04T11:53:25.312Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pain",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "c000a534-bc03-449a-8b1c-a8d46cf7ffa6"
+      },
+      {
+        "created": "2019-03-04T11:53:25.314Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:01:22.207Z",
+        "modified": "2019-03-04T11:53:25.314Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.9,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "401a670e-994e-43f0-9b91-c36deaff72e2"
+      },
+      {
+        "created": "2019-03-04T11:53:25.279Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T23:01:22.207Z",
+        "modified": "2019-03-04T11:53:25.279Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 91.0,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "9a01dc14-da72-4c07-884a-b28e982de868"
+      }
+    ],
+    "record_time": "2019-02-20T22:59:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 9,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-20T22:59:22.207Z",
+    "uuid": "85edadee-daa3-4353-b887-2c2ca2d38920"
+  },
+  {
+    "created": "2019-03-04T11:53:25.533Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:25.533Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:25.503Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:03:22.207Z",
+        "modified": "2019-03-04T11:53:25.503Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.506Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.506Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "857b7e21-f41c-4b6a-8557-4427589939e9"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 136.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "d3569aab-121a-45d8-a7fd-c5af707953d9"
+      },
+      {
+        "created": "2019-03-04T11:53:25.500Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:05:22.207Z",
+        "modified": "2019-03-04T11:53:25.500Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Confusion",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "cfc0eff5-918b-4e2a-b158-8a6115d9cbc9"
+      },
+      {
+        "created": "2019-03-04T11:53:25.530Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:05:22.207Z",
+        "modified": "2019-03-04T11:53:25.530Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 41.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "bdcc5a09-041b-437c-8bb4-b851f2d67b9e"
+      },
+      {
+        "created": "2019-03-04T11:53:25.517Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:03:22.207Z",
+        "modified": "2019-03-04T11:53:25.517Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.521Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.521Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "lying",
+          "uuid": "e1adbdaa-7772-4b31-a901-ccaa6fc7bfd4"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 88.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "38d882a1-459a-4da1-8e31-a272262ba68d"
+      },
+      {
+        "created": "2019-03-04T11:53:25.477Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:04:22.207Z",
+        "modified": "2019-03-04T11:53:25.477Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Pallor or Cyanosis",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "0f64bcc7-0dd6-44a3-b32b-f4bb6d6a5efd"
+      },
+      {
+        "created": "2019-03-04T11:53:25.482Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:04:22.207Z",
+        "modified": "2019-03-04T11:53:25.482Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.485Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Humidified",
+          "mask_percent": 40,
+          "modified": "2019-03-04T11:53:25.485Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "d602158a-8655-48ef-ade1-da7061d20a9d"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 7.1,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "35fa43ac-412a-4fae-ad26-60a32d419cbe"
+      },
+      {
+        "created": "2019-03-04T11:53:25.479Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:03:22.207Z",
+        "modified": "2019-03-04T11:53:25.479Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": 0,
+        "uuid": "2591bc4f-85ed-49bd-a90e-a0e59d9a373e"
+      },
+      {
+        "created": "2019-03-04T11:53:25.497Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:03:22.207Z",
+        "modified": "2019-03-04T11:53:25.498Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 38.5,
+        "patient_refused": null,
+        "score_value": 1,
+        "uuid": "8eb10933-a2c1-4058-9505-0bf44555d4ec"
+      },
+      {
+        "created": "2019-03-04T11:53:25.495Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-20T00:03:22.207Z",
+        "modified": "2019-03-04T11:53:25.495Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 91.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "ede463e0-be9d-4e05-80d2-b67b2a13fc0a"
+      }
+    ],
+    "record_time": "2019-02-20T00:02:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 12,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-20T00:02:22.207Z",
+    "uuid": "12a3c557-2f30-4663-8bb2-caf7130b17aa"
+  },
+  {
+    "created": "2019-03-04T11:53:25.729Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": false,
+    "modified": "2019-03-04T11:53:25.729Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:25.717Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:52:22.207Z",
+        "modified": "2019-03-04T11:53:25.717Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.720Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "CPAP",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.720Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "e2f74d47-c2e7-473b-a6ec-ae66853498ed"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 13.8,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "8b34712a-bcf8-4ace-8ece-aa81cfd1a325"
+      },
+      {
+        "created": "2019-03-04T11:53:25.678Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:50:22.207Z",
+        "modified": "2019-03-04T11:53:25.678Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 14.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "eef97f30-a7f3-48ca-b52b-448ba6820cbe"
+      },
+      {
+        "created": "2019-03-04T11:53:25.680Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:50:22.207Z",
+        "modified": "2019-03-04T11:53:25.680Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Voice",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "f5a7a073-7028-47f2-910d-c288ea14cdfd"
+      },
+      {
+        "created": "2019-03-04T11:53:25.683Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:50:22.207Z",
+        "modified": "2019-03-04T11:53:25.683Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 129.0,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "5d59d9ed-7668-48ba-b933-9f5d0f5dd13b"
+      },
+      {
+        "created": "2019-03-04T11:53:25.686Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:51:22.207Z",
+        "modified": "2019-03-04T11:53:25.686Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.688Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.688Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "53414b23-9b10-49dc-b6c3-576eed89b189"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 122.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "6fa9ef6b-4bcf-4ecf-a0de-5d4d0e1ac9e7"
+      },
+      {
+        "created": "2019-03-04T11:53:25.697Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:51:22.207Z",
+        "modified": "2019-03-04T11:53:25.697Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.701Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.701Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "standing",
+          "uuid": "6afb844a-f857-4918-b5c1-4af17ef71329"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 63.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "1b442798-7b20-46f4-96dc-46d8043644e8"
+      },
+      {
+        "created": "2019-03-04T11:53:25.710Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:51:22.207Z",
+        "modified": "2019-03-04T11:53:25.710Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "spo2",
+        "observation_unit": "%",
+        "observation_value": 90.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "2154c85d-ff62-47ae-8067-05560f7ae138"
+      },
+      {
+        "created": "2019-03-04T11:53:25.712Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:51:22.207Z",
+        "modified": "2019-03-04T11:53:25.712Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "temperature",
+        "observation_unit": "celcius",
+        "observation_value": 37.4,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "3b929d57-ee85-4d0b-bf99-92a6263bbd3f"
+      },
+      {
+        "created": "2019-03-04T11:53:25.715Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-19T08:53:22.207Z",
+        "modified": "2019-03-04T11:53:25.715Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Infection?",
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "fd798993-b51f-475e-81ed-4940f2cb8c03"
+      }
+    ],
+    "record_time": "2019-02-19T08:50:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 10,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-19T08:50:22.207Z",
+    "uuid": "3527a261-1f38-4561-b977-ec32f952fefb"
+  },
+  {
+    "created": "2019-03-04T11:53:25.927Z",
+    "created_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "encounter_id": "9ec550f0-4d38-4274-8b35-05d356f7c350",
+    "is_partial": true,
+    "modified": "2019-03-04T11:53:25.928Z",
+    "modified_by": {
+      "first_name": "Stan",
+      "last_name": "Lee",
+      "uuid": "G"
+    },
+    "monitoring_instruction": "high_monitoring",
+    "observations": [
+      {
+        "created": "2019-03-04T11:53:25.882Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:06:22.207Z",
+        "modified": "2019-03-04T11:53:25.882Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "heart_rate",
+        "observation_unit": "bpm",
+        "observation_value": 67.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "e92a4307-c8b5-49c5-9547-cf53067725c0"
+      },
+      {
+        "created": "2019-03-04T11:53:25.885Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:05:22.207Z",
+        "modified": "2019-03-04T11:53:25.885Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "nurse_concern",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": true,
+        "score_value": null,
+        "uuid": "11ba7df9-2c3c-4371-8f23-f99696143b71"
+      },
+      {
+        "created": "2019-03-04T11:53:25.888Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:08:22.207Z",
+        "modified": "2019-03-04T11:53:25.888Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": "Confusion",
+        "observation_type": "consciousness_acvpu",
+        "observation_unit": null,
+        "observation_value": null,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "0e15be28-3023-4d1c-9e00-8b669b6a5b76"
+      },
+      {
+        "created": "2019-03-04T11:53:25.917Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:08:22.207Z",
+        "modified": "2019-03-04T11:53:25.917Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.919Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.919Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "e5f0108e-3bb3-40d3-bcfe-41be27b6d8ca"
+        },
+        "observation_string": null,
+        "observation_type": "diastolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 65.0,
+        "patient_refused": null,
+        "score_value": null,
+        "uuid": "84b9368b-aacd-4789-9170-f03162fbe490"
+      },
+      {
+        "created": "2019-03-04T11:53:25.906Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:08:22.207Z",
+        "modified": "2019-03-04T11:53:25.906Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.909Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": null,
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.909Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": "sitting",
+          "uuid": "5b79435d-25b7-49b0-bab7-8c6a08a3a71c"
+        },
+        "observation_string": null,
+        "observation_type": "systolic_blood_pressure",
+        "observation_unit": "mmHg",
+        "observation_value": 124.0,
+        "patient_refused": null,
+        "score_value": 0,
+        "uuid": "e5ce5f10-3526-4ef4-a941-c0448a4b1014"
+      },
+      {
+        "created": "2019-03-04T11:53:25.902Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:05:22.207Z",
+        "modified": "2019-03-04T11:53:25.902Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": null,
+        "observation_string": null,
+        "observation_type": "respiratory_rate",
+        "observation_unit": "/min",
+        "observation_value": 60.0,
+        "patient_refused": null,
+        "score_value": 3,
+        "uuid": "94d913ca-75db-42d8-ae25-4e60d84b13fa"
+      },
+      {
+        "created": "2019-03-04T11:53:25.891Z",
+        "created_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "measured_time": "2019-02-18T12:05:22.207Z",
+        "modified": "2019-03-04T11:53:25.891Z",
+        "modified_by": {
+          "first_name": "Stan",
+          "last_name": "Lee",
+          "uuid": "G"
+        },
+        "observation_metadata": {
+          "created": "2019-03-04T11:53:25.894Z",
+          "created_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "gcs_eyes": null,
+          "gcs_motor": null,
+          "gcs_verbal": null,
+          "mask": "Simple",
+          "mask_percent": null,
+          "modified": "2019-03-04T11:53:25.894Z",
+          "modified_by": {
+            "first_name": "Stan",
+            "last_name": "Lee",
+            "uuid": "G"
+          },
+          "patient_position": null,
+          "uuid": "d6407d84-aed1-430a-9185-8d37b4e7f630"
+        },
+        "observation_string": null,
+        "observation_type": "o2_therapy_status",
+        "observation_unit": "lpm",
+        "observation_value": 10.5,
+        "patient_refused": null,
+        "score_value": 2,
+        "uuid": "17763a65-88fd-48eb-a76b-0631f0da78bb"
+      }
+    ],
+    "record_time": "2019-02-18T12:05:22.207Z",
+    "score_severity": "high",
+    "score_string": null,
+    "score_system": "news2",
+    "score_value": 8,
+    "spo2_scale": 1,
+    "time_next_obs_set_due": "2019-02-18T12:05:22.207Z",
+    "uuid": "2e64bb99-9b52-45bb-b135-790c6b7ff950"
+  }
+]
+}

@@ -1,0 +1,199 @@
+x-environment:
+  &COMMON_ENVIRONMENT
+  ENVIRONMENT: DEVELOPMENT
+  PROXY_URL: http://localhost
+  HS_ISSUER: http://localhost/
+  HS_KEY: secret
+  AUTH0_MGMT_CLIENT_ID: "doesnotmatter"
+  AUTH0_MGMT_CLIENT_SECRET: "shhh"
+  AUTH0_AUTHZ_CLIENT_ID: "doesnotmatter"
+  AUTH0_AUTHZ_CLIENT_SECRET: "shhh"
+  AUTH0_AUTHZ_WEBTASK_URL: "doesnotmatter"
+  AUTH0_CLIENT_ID: "doesnotmatter"
+  AUTH0_AUDIENCE: "http://localhost/"
+  NONCUSTOM_AUTH0_DOMAIN: "https://integration-tests"
+  AUTH0_CUSTOM_DOMAIN: "dev"
+  DISABLE_CREATE_USER_IN_AUTH0: "True"
+  AUTH0_HS_KEY: "secret"
+  DATABASE_HOST: dhos-pdf-api-db
+  DATABASE_PORT: 5432
+  DATABASE_USER: dhos-pdf-api-db
+  DATABASE_PASSWORD: dhos-pdf-api-db
+  DATABASE_NAME: dhos-pdf-api-db
+  RABBITMQ_HOST: rabbitmq
+  RABBITMQ_USERNAME: guest
+  RABBITMQ_PASSWORD: guest
+  RABBITMQ_NOENCRYPT: "true"
+  REDIS_HOST: localhost
+  REDIS_PORT: 6379
+  REDIS_PASSWORD: any
+  TOKEN_URL: "https://integration-tests/oauth/token"
+  LOG_LEVEL: DEBUG
+  LOG_FORMAT: COLOUR
+  GDM_BCP_OUTPUT_DIR: gdm-bcp-output
+  DBM_BCP_OUTPUT_DIR: dbm-bcp-output
+  SEND_BCP_OUTPUT_DIR: send-bcp-output
+  SEND_DISCHARGE_OUTPUT_DIR: send-discharge-output
+  SEND_WARD_REPORT_OUTPUT_DIR: send-ward-report-output
+  SEND_TMP_OUTPUT_DIR: /tmp
+  SEND_BCP_RSYNC_DIR: send-bcp-rsync
+  DHOS_PDF_ENGINE_URL: http://dhos-pdf-engine:3000
+  SERVER_TIMEZONE: Europe/London
+  DHOS_TRUSTOMER_API_HOST: http://wiremock:8080/dhos-trustomer
+  CUSTOMER_CODE: inttests
+  POLARIS_API_KEY: inttestsecret
+  MOCK_TRUSTOMER_CONFIG: >-
+    {
+      "gdm_config": {
+      },
+      "send_config": {
+        "allow_take_obs_in_desktop": true,
+        "generate_oru_messages": true,
+        "job_titles": [
+          {
+            "title": "Doctor",
+            "value": "doctor"
+          }
+        ],
+        "nurse_concern": [
+            {
+                "code": "A",
+                "name": "Airway compromise",
+                "text": "Acute airway compromised"
+            }
+        ],
+        "max_retrospective_obs_period_hours": 4,
+        "news2": {
+          "zero_severity_interval_hours": 12,
+          "low_severity_interval_hours": 4,
+          "low_medium_severity_interval_hours": 1,
+          "medium_severity_interval_hours": 1,
+          "high_severity_interval_hours": 0,
+          "escalation_policy": {
+            "routine_monitoring": "routine_monitoring",
+            "low_monitoring": "low_monitoring",
+            "low_medium_monitoring": "low_medium_monitoring",
+            "medium_monitoring": "medium_monitoring",
+            "high_monitoring": "high_monitoring"
+          }
+        },
+        "meows": {
+          "zero_severity_interval_hours": 12,
+          "low_severity_interval_hours": 12,
+          "low_medium_severity_interval_hours": 6,
+          "medium_severity_interval_hours": 0.5,
+          "high_severity_interval_hours": 0.5,
+          "escalation_policy": {
+            "routine_monitoring": "routine_monitoring",
+            "low_monitoring": "low_monitoring",
+            "low_medium_monitoring": "low_medium_monitoring",
+            "medium_monitoring": "medium_monitoring",
+            "high_monitoring": "high_monitoring"
+          }
+        },
+        "post_discharge_display_time_hours": 1,
+        "send_desktop_timeout_minutes": 15,
+        "send_entry_timeout_minutes": 8,
+        "send_terms_content": "Send Test",
+        "send_terms_version": 1
+      }
+    }
+
+services:
+  dhos-pdf-integration-tests:
+    container_name: "dhos-pdf-integration-tests"
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      <<: *COMMON_ENVIRONMENT
+      BEHAVE_ARGS: ${BEHAVE_ARGS:-}
+      REPORT_PORTAL_URL: ${REPORT_PORTAL_URL:-}
+      REPORT_PORTAL_TOKEN: ${REPORT_PORTAL_TOKEN:-}
+      REPORT_PORTAL_PROJECT: ${REPORT_PORTAL_PROJECT:-}
+      ENVIRONMENT: ${ENVIRONMENT:-}
+      RELEASE: ${RELEASE:-}
+      SYSTEM_JWT_SCOPE: >-
+        read:gdm_pdf read:send_pdf
+        read:ward_report write:ward_report
+        write:gdm_pdf write:send_pdf
+    command: >
+      bash -c "behave --no-capture --no-logcapture ${BEHAVE_ARGS:-}"
+    depends_on:
+      "dhos-pdf-api":
+        condition: service_healthy
+
+  dhos-pdf-api:
+    container_name: "dhos-pdf-api"
+    build:
+      context: ..
+      args:
+        - GEMFURY_DOWNLOAD_KEY
+    environment:
+      <<: *COMMON_ENVIRONMENT
+    command: >-
+      bash -c "flask db upgrade
+      && python -m dhos_pdf_api"
+    ports:
+      - "5000:5000"
+    healthcheck:
+      test: curl -f http://localhost:5000/running || false
+      interval: 3s
+      retries: 40
+      start_period: 10s
+    depends_on:
+      "rabbitmq":
+        condition: service_healthy
+      "dhos-pdf-api-db":
+        condition: service_healthy
+      "dhos-pdf-engine":
+        condition: service_healthy
+      "wiremock":
+        condition: service_healthy
+
+  dhos-pdf-engine:
+    container_name: "dhos-pdf-engine"
+    image: sensynehealth.azurecr.io/dhos/dhos-pdf-engine:dev
+    environment:
+      <<: *COMMON_ENVIRONMENT
+    healthcheck:
+      test: "curl -f http://localhost:3000/running || false"
+      interval: 1s
+      retries: 40
+    ports:
+      - "3000:3000"
+
+  dhos-pdf-api-db:
+    container_name: "dhos-pdf-api-db"
+    image: docker.io/postgres
+    environment:
+      POSTGRES_USER: dhos-pdf-api-db
+      POSTGRES_DB: dhos-pdf-api-db
+      POSTGRES_PASSWORD: dhos-pdf-api-db
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER}"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
+
+  rabbitmq:
+    container_name: "rabbitmq"
+    image: docker.io/rabbitmq:3.8-management-alpine
+    healthcheck:
+      test: rabbitmq-diagnostics -q check_running && rabbitmq-diagnostics -q check_local_alarms
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    ports:
+      - "15672"
+
+  wiremock:
+    container_name: "wiremock"
+    image: rodolpheche/wiremock:2.25.1
+    healthcheck:
+      test: "curl --location --request POST 'http://localhost:8080/__admin/mappings' || false"
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s

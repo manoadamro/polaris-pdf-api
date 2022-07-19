@@ -1,0 +1,1045 @@
+openapi: 3.0.3
+info:
+  description: The DHOS PDF API is responsible for storing and retrieving PDF documents.
+  title: DHOS PDF API
+  version: 1.0.1
+paths:
+  /running:
+    get:
+      summary: Verify service is running
+      description: Verifies that the service is running. Used for monitoring in kubernetes.
+      tags:
+      - monitoring
+      responses:
+        '200':
+          description: If we respond, we are running
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  running:
+                    type: boolean
+                    example: true
+      operationId: flask_batteries_included.blueprint_monitoring.app_running
+  /version:
+    get:
+      summary: Get version information
+      description: Get the version number, circleci build number, and git hash.
+      tags:
+      - monitoring
+      responses:
+        '200':
+          description: Version numbers
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  circle:
+                    type: string
+                    example: '1234'
+                  hash:
+                    type: string
+                    example: 366c204
+      operationId: flask_batteries_included.blueprint_monitoring.app_version
+  /dhos/v1/gdm_pdf:
+    post:
+      summary: Create new PDF document containing a summary of a GDM patient record
+      description: Generate a PDF containing a summary of a GDM patient record. The
+        request body contains details of the patient and their blood glucose readings.
+        Responds with HTTP 201.
+      tags:
+      - pdf
+      requestBody:
+        description: Data for creation of patient report
+        required: true
+        content:
+          application/json:
+            schema:
+              x-body-name: gdm_patient_details
+              $ref: '#/components/schemas/GdmPdfRequestSchema'
+      responses:
+        '201':
+          description: PDF document created
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.create_gdm_patient_pdf
+      security:
+      - bearerAuth: []
+  /dhos/v1/dbm_pdf:
+    post:
+      summary: Create new DBM PDF document containing a summary of the patient record
+      description: Generate a PDF containing a summary of a DBM patient record. The
+        request body contains details of the patient and their blood glucose readings.
+        Responds with HTTP 201.
+      tags:
+      - pdf
+      requestBody:
+        description: Data for creation of patient report
+        required: true
+        content:
+          application/json:
+            schema:
+              x-body-name: patient_details
+      responses:
+        '201':
+          description: PDF document created
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.create_patient_pdf
+      security:
+      - bearerAuth: []
+  /dhos/v1/gdm_pdf/{patient_uuid}:
+    get:
+      summary: Get GDM PDF by patient UUID
+      description: Get a care record PDF for a GDM patient with the provided patient
+        UUID
+      tags:
+      - pdf
+      parameters:
+      - name: patient_uuid
+        in: path
+        required: true
+        description: The patient UUID
+        schema:
+          type: string
+          example: 1e4e623e-d918-448a-ba13-393408160354
+      responses:
+        '200':
+          description: The requested PDF document
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/pdf:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.get_gdm_patient_pdf
+      security:
+      - bearerAuth: []
+  /dhos/v1/dbm_pdf/{patient_uuid}:
+    get:
+      summary: Get DBM PDF by patient UUID
+      description: Get a DBM care record PDF for a patient with the provided patient
+        UUID
+      tags:
+      - pdf
+      parameters:
+      - name: patient_uuid
+        in: path
+        required: true
+        description: The patient UUID
+        schema:
+          type: string
+          example: 1e4e623e-d918-448a-ba13-393408160354
+      responses:
+        '200':
+          description: The requested PDF document
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/pdf:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.get_patient_pdf
+      security:
+      - bearerAuth: []
+  /dhos/v1/send_pdf:
+    post:
+      summary: Create new PDF document containing observations for a SEND patient
+      description: Generate a PDF chart for a SEND patient, containing observations
+        recorded during a particular encounter (hospital stay). This endpoint may
+        also generate additional files depending on the trustomer configuration. The
+        endpoint responds with an HTTP 201 on success.
+      tags:
+      - pdf
+      requestBody:
+        description: Data for creation of SEND report
+        required: true
+        content:
+          application/json:
+            schema:
+              x-body-name: send_documents_details
+              $ref: '#/components/schemas/SendPdfRequestSchema'
+      responses:
+        '201':
+          description: PDF document created
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.create_send_documents
+      security:
+      - bearerAuth: []
+  /dhos/v1/patient/pdf/{encounter_uuid}:
+    get:
+      summary: Get SEND PDF by encounter UUID
+      description: Get a PDF chart for a SEND patient for the provided encounter (hospital
+        stay) UUID.
+      tags:
+      - pdf
+      parameters:
+      - name: encounter_uuid
+        in: path
+        required: true
+        description: The encounter (hospital stay) UUID
+        schema:
+          type: string
+          example: 18439f36-ffa9-42ae-90de-0beda299cd37
+      responses:
+        '200':
+          description: The requested PDF document
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/pdf:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.get_send_patient_pdf
+      security:
+      - bearerAuth: []
+  /dhos/v1/ward_report:
+    post:
+      summary: Create new PDF document for a SEND ward report for the provided location
+      description: Generate a SEND PDF ward report for a particular location, containing
+        statistics on the observations taken for patients in that location. The endpoint
+        responds with an HTTP 201 on success.
+      tags:
+      - pdf
+      requestBody:
+        description: Data for creation of ward report
+        required: true
+        content:
+          application/json:
+            schema:
+              x-body-name: ward_report_details
+              $ref: '#/components/schemas/WardReportRequestSchema'
+      responses:
+        '201':
+          description: PDF document created
+        default:
+          description: Error, e.g. 400 Bad Request, 404 Not Found, 503 Service Unavailable
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.create_ward_report
+      security:
+      - bearerAuth: []
+  /dhos/v1/ward_report/{location_uuid}:
+    get:
+      summary: Get SEND ward report PDF by location UUID
+      description: Get a SEND PDF ward report for the provided location UUID.
+      tags:
+      - pdf
+      parameters:
+      - name: location_uuid
+        in: path
+        required: true
+        description: The location UUID for the hospital ward
+        schema:
+          type: string
+          example: 18439f36-ffa9-42ae-90de-0beda299cd37
+      responses:
+        '200':
+          description: The requested PDF document
+          content:
+            application/pdf:
+              schema:
+                type: string
+                format: binary
+        default:
+          description: Error, e.g. 404 Not Found, 503 Service Unavailable
+          content:
+            application/pdf:
+              schema:
+                $ref: '#/components/schemas/Error'
+      operationId: dhos_pdf_api.blueprint_api.get_ward_report
+      security:
+      - bearerAuth: []
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+          description: HTTP response code
+          example: 404
+        message:
+          type: string
+          description: Message attached to response
+          example: Not Found
+      required:
+      - code
+      description: An error response in json format
+    LocationSchema:
+      nullable: true
+      type: object
+      properties:
+        ods_code:
+          type: string
+        display_name:
+          type: string
+        location_type:
+          type: string
+        parent:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/LocationSchema'
+      required:
+      - display_name
+      - location_type
+      - ods_code
+    Patient:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        dob:
+          type: string
+          nullable: true
+        hospital_number:
+          type: string
+        nhs_number:
+          type: string
+          nullable: true
+        sex:
+          type: string
+          nullable: true
+      required:
+      - first_name
+      - hospital_number
+      - last_name
+    Clinician:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        uuid:
+          type: string
+      required:
+      - first_name
+      - last_name
+      - uuid
+    ScoreSystemHistory:
+      type: object
+      properties:
+        score_system:
+          type: string
+          nullable: true
+        spo2_scale:
+          type: integer
+          nullable: true
+        changed_by:
+          $ref: '#/components/schemas/Clinician'
+        changed_time:
+          type: string
+    Encounter:
+      type: object
+      properties:
+        uuid:
+          type: string
+        created:
+          type: string
+        admitted_at:
+          type: string
+        discharged_at:
+          type: string
+          nullable: true
+        epr_encounter_id:
+          type: string
+          nullable: true
+        spo2_scale:
+          type: integer
+          nullable: true
+        score_system_history:
+          type: array
+          items:
+            $ref: '#/components/schemas/ScoreSystemHistory'
+      required:
+      - admitted_at
+      - created
+      - uuid
+    Observation:
+      type: object
+      properties:
+        measured_time:
+          type: string
+        observation_metadata:
+          type: object
+          nullable: true
+        observation_string:
+          type: string
+          nullable: true
+        observation_type:
+          type: string
+        observation_unit:
+          type: string
+          nullable: true
+        observation_value:
+          type: number
+          nullable: true
+        patient_refused:
+          type: boolean
+          nullable: true
+        score_value:
+          type: integer
+          nullable: true
+        uuid:
+          type: string
+          nullable: true
+      required:
+      - measured_time
+      - observation_type
+    ObservationSet:
+      type: object
+      properties:
+        created_by:
+          type: object
+          nullable: true
+        is_partial:
+          type: boolean
+          nullable: true
+        observations:
+          type: array
+          items:
+            $ref: '#/components/schemas/Observation'
+        record_time:
+          type: string
+        score_severity:
+          type: string
+          nullable: true
+        score_string:
+          type: string
+          nullable: true
+        score_system:
+          type: string
+        score_value:
+          type: integer
+          nullable: true
+        spo2_scale:
+          type: integer
+      required:
+      - created_by
+      - observations
+      - record_time
+      - score_severity
+      - score_string
+      - score_system
+      - score_value
+      - spo2_scale
+    SendPdfRequestSchema:
+      type: object
+      properties:
+        patient:
+          $ref: '#/components/schemas/Patient'
+        encounter:
+          $ref: '#/components/schemas/Encounter'
+        location:
+          $ref: '#/components/schemas/LocationSchema'
+        observation_sets:
+          type: array
+          items:
+            $ref: '#/components/schemas/ObservationSet'
+      required:
+      - encounter
+      - location
+      - observation_sets
+      - patient
+      title: Send report request data
+    Metric:
+      type: object
+      properties:
+        metric_name:
+          type: string
+          example: count_obs_sets_on_time_high_risk
+        metric_date:
+          type: string
+          example: '2019-08-01'
+        metric_value:
+          type: integer
+          example: 123
+        measurement_timestamp:
+          type: string
+          example: '2019-08-01T00:09:00.000'
+    WardReportRequestSchema:
+      type: object
+      properties:
+        hospital_name:
+          type: string
+          description: Name of hospital
+          example: Birchy Hospital
+        ward_name:
+          type: string
+          description: Name of ward
+          example: Dumbledore Ward
+        location_uuid:
+          type: string
+          format: uuid
+          description: UUID of ward location
+          example: 7379e212-9bab-4df1-a95f-f927c4c9f7f1
+        report_month:
+          type: string
+          description: Month of report
+          example: July
+        report_year:
+          type: string
+          description: Year of report
+          example: '2019'
+        pdf_data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Metric'
+      required:
+      - hospital_name
+      - pdf_data
+      - report_month
+      - report_year
+      - ward_name
+      title: Ward report request data
+    PersonalAddress:
+      type: object
+      properties:
+        postcode:
+          nullable: true
+      title: Patient personal address
+    RecordHistory:
+      type: object
+      properties:
+        parity:
+          type: integer
+          nullable: true
+        gravidity:
+          type: integer
+          nullable: true
+      title: Patient record history
+    Clinician1:
+      type: object
+      properties:
+        first_name:
+          type: string
+        last_name:
+          type: string
+        job_title:
+          type: string
+          nullable: true
+        uuid:
+          type: string
+      required:
+      - first_name
+      - last_name
+      - uuid
+    Note:
+      type: object
+      properties:
+        created:
+          type: string
+        clinician:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/Clinician1'
+        content:
+          type: string
+          nullable: true
+      required:
+      - created
+      title: Clinician notes
+    Record:
+      type: object
+      properties:
+        history:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/RecordHistory'
+        notes:
+          type: array
+          nullable: true
+          items:
+            $ref: '#/components/schemas/Note'
+      title: Patient record
+    Patient1:
+      type: object
+      properties:
+        uuid:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        hospital_number:
+          type: string
+        nhs_number:
+          type: string
+          nullable: true
+        status:
+          nullable: true
+        dob:
+          type: string
+          nullable: true
+        bmi:
+          nullable: true
+        diabetes_type:
+          nullable: true
+        allowed_to_text:
+          type: boolean
+          nullable: true
+        allowed_to_email:
+          type: boolean
+          nullable: true
+        phone_number:
+          type: string
+          nullable: true
+        email_address:
+          type: string
+          nullable: true
+        personal_address:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/PersonalAddress'
+        accessibility_considerations:
+          nullable: true
+        other_notes:
+          type: string
+          nullable: true
+        record:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/Record'
+      required:
+      - first_name
+      - hospital_number
+      - last_name
+      - uuid
+      title: Full patient schema
+    Pregnancy:
+      type: object
+      properties:
+        stage:
+          nullable: true
+        estimated_delivery_date:
+          type: string
+          nullable: true
+        expected_number_of_babies:
+          type: integer
+          nullable: true
+        planned_delivery_place:
+          type: string
+          nullable: true
+        height_at_booking_in_mm:
+          type: integer
+          nullable: true
+        weight_at_booking_in_g:
+          type: integer
+          nullable: true
+        weight_at_diagnosis_in_g:
+          type: integer
+          nullable: true
+        weight_at_36_weeks_in_g:
+          type: integer
+          nullable: true
+        height_at_booking_in_cm:
+          type: number
+          nullable: true
+        weight_at_booking_in_kg:
+          type: number
+          nullable: true
+        weight_at_diagnosis_in_kg:
+          type: number
+          nullable: true
+        weight_at_36_weeks_in_kg:
+          type: number
+          nullable: true
+        colostrum_harvesting:
+          type: boolean
+          nullable: true
+        induced:
+          type: boolean
+          nullable: true
+        length_of_postnatal_stay_in_days:
+          type: integer
+          nullable: true
+        post_natal_test_date:
+          type: string
+          nullable: true
+        gestationalHypertension:
+          type: boolean
+          nullable: true
+        preEclampsia:
+          type: boolean
+          nullable: true
+        perinealTrauma:
+          type: boolean
+          nullable: true
+        postpartumHaemorrhage:
+          type: boolean
+          nullable: true
+        postpartumInfection:
+          type: boolean
+          nullable: true
+      title: Patient pregnancy
+    ReadingsPlan:
+      type: object
+      properties:
+        days_per_week_to_take_readings:
+          type: integer
+          nullable: true
+        readings_per_day:
+          type: integer
+          nullable: true
+      title: Patient readings plan
+    Baby:
+      type: object
+      properties:
+        first_name:
+          type: string
+          nullable: true
+        last_name:
+          type: string
+          nullable: true
+        sex:
+          type: string
+          nullable: true
+        dob:
+          type: string
+          nullable: true
+      title: Baby data
+    Delivery:
+      type: object
+      properties:
+        patient:
+          $ref: '#/components/schemas/Baby'
+        birth_outcome:
+          type: string
+          nullable: true
+        outcome_for_baby:
+          type: string
+          nullable: true
+        birth_weight_in_grams:
+          type: integer
+          nullable: true
+        admitted_to_special_baby_care_unit:
+          nullable: true
+        hypoglycemia:
+          type: boolean
+          nullable: true
+        hyperbilirubinemia:
+          type: boolean
+          nullable: true
+        shoulderDystocia:
+          type: boolean
+          nullable: true
+        boneFracture:
+          type: boolean
+          nullable: true
+        nervePalsy:
+          type: boolean
+          nullable: true
+        respiratoryDistressSyndrome:
+          type: boolean
+          nullable: true
+        neonatal_complications_other:
+          type: string
+          nullable: true
+        feeding_method:
+          type: string
+          nullable: true
+        apgar_1_minute:
+          type: integer
+          nullable: true
+        apgar_5_minute:
+          type: integer
+          nullable: true
+      required:
+      - patient
+      title: Patient delivery
+    LatestVisit:
+      type: object
+      properties:
+        visit_date:
+          type: string
+          nullable: true
+      title: Patient latest visit
+    ManagementPlan:
+      type: object
+      properties:
+        management_strategy:
+          nullable: true
+      title: Management plan
+    BloodGlucoseReadingAlert:
+      type: object
+      properties:
+        dismissed:
+          type: boolean
+          nullable: true
+      title: Blood glucose reading alert
+    PrandialTag:
+      type: object
+      properties:
+        description:
+          nullable: true
+      title: Prandial tag
+    Dose:
+      type: object
+      properties:
+        amount:
+          nullable: true
+        medication_id:
+          nullable: true
+      title: Dose
+    BloodGlucoseReading:
+      type: object
+      properties:
+        alert:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/BloodGlucoseReadingAlert'
+        measured_timestamp:
+          type: string
+          nullable: true
+        prandial_tag:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/PrandialTag'
+        blood_glucose_value:
+          nullable: true
+        units:
+          nullable: true
+        doses:
+          type: array
+          nullable: true
+          items:
+            $ref: '#/components/schemas/Dose'
+        comment:
+          type: string
+          nullable: true
+      title: Blood glucose reading
+    Hba1c:
+      type: object
+      properties:
+        value:
+          nullable: true
+        date:
+          type: string
+          nullable: true
+      title: HbA1c
+    Diabetes:
+      type: object
+      properties:
+        diagnosed:
+          nullable: true
+        diagnosis_tool:
+          nullable: true
+        risk_factors:
+          nullable: true
+        diagnosis_other:
+          nullable: true
+        first_hba1c:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/Hba1c'
+        latest_hba1c:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/Hba1c'
+      title: Diabetes
+    PostNatalReading:
+      type: object
+      properties:
+        value:
+          nullable: true
+        date:
+          type: string
+          nullable: true
+      title: Post natal reading
+    GdmPdfRequestSchema:
+      type: object
+      properties:
+        patient:
+          $ref: '#/components/schemas/Patient1'
+        pregnancy:
+          $ref: '#/components/schemas/Pregnancy'
+        readings_plan:
+          $ref: '#/components/schemas/ReadingsPlan'
+        deliveries:
+          type: array
+          items:
+            $ref: '#/components/schemas/Delivery'
+        latest_visit:
+          $ref: '#/components/schemas/LatestVisit'
+        management_plan:
+          $ref: '#/components/schemas/ManagementPlan'
+        blood_glucose_readings:
+          type: array
+          items:
+            $ref: '#/components/schemas/BloodGlucoseReading'
+        diabetes:
+          $ref: '#/components/schemas/Diabetes'
+        medications:
+          type: object
+        medication_plan:
+          type: object
+        post_natal_reading:
+          $ref: '#/components/schemas/PostNatalReading'
+        messages:
+          type: array
+          nullable: true
+          items:
+            type: object
+      required:
+      - blood_glucose_readings
+      - deliveries
+      - diabetes
+      - latest_visit
+      - management_plan
+      - medication_plan
+      - medications
+      - messages
+      - patient
+      - post_natal_reading
+      - pregnancy
+      - readings_plan
+      title: Patient report request data
+    Patient2:
+      type: object
+      properties:
+        uuid:
+          type: string
+        first_name:
+          type: string
+        last_name:
+          type: string
+        hospital_number:
+          type: string
+        nhs_number:
+          type: string
+          nullable: true
+        status:
+          nullable: true
+        dob:
+          type: string
+          nullable: true
+        bmi:
+          nullable: true
+        diabetes_type:
+          nullable: true
+        allowed_to_text:
+          type: boolean
+          nullable: true
+        allowed_to_email:
+          type: boolean
+          nullable: true
+        phone_number:
+          type: string
+          nullable: true
+        email_address:
+          type: string
+          nullable: true
+        personal_address:
+          nullable: true
+          allOf:
+          - $ref: '#/components/schemas/PersonalAddress'
+        accessibility_considerations:
+          nullable: true
+        other_notes:
+          type: string
+          nullable: true
+        created:
+          type: string
+          nullable: true
+      required:
+      - first_name
+      - hospital_number
+      - last_name
+      - uuid
+      title: Full patient schema
+    DbmPdfRequestSchema:
+      type: object
+      properties:
+        patient:
+          $ref: '#/components/schemas/Patient2'
+        readings_plan:
+          $ref: '#/components/schemas/ReadingsPlan'
+        management_plan:
+          $ref: '#/components/schemas/ManagementPlan'
+        blood_glucose_readings:
+          type: array
+          items:
+            $ref: '#/components/schemas/BloodGlucoseReading'
+        diabetes:
+          $ref: '#/components/schemas/Diabetes'
+        medications:
+          type: object
+        medication_plan:
+          type: object
+        hba1c_details:
+          type: object
+          nullable: true
+      required:
+      - blood_glucose_readings
+      - diabetes
+      - management_plan
+      - medication_plan
+      - medications
+      - patient
+      - readings_plan
+      title: Patient report request data
+  responses:
+    BadRequest:
+      description: Bad or malformed request was received
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    NotFound:
+      description: The specified resource was not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    ServiceUnavailable:
+      description: Service or dependent resource not available
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-size: 11pt;
+            font-family: OpenSans, Helvetica, Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 0 0 4px 0;
+            padding-bottom: 2px;
+            font-size: 14pt;
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
+
+        h2.noBoarder {
+            border-bottom: 0;
+
+        }
+
+        h2, h3 {
+            font-weight: normal;
+            font-family: Questrial, Helvetica, Arial, sans-serif;
+        }
+
+        h3 {
+            font-size: 12pt;
+            margin-bottom: 3px;
+        }
+
+        section {
+            margin-bottom: 2.5em;
+            page-break-inside: avoid;
+        }
+
+        section div {
+            margin-top: 2px;
+            padding:0;
+        }
+
+        section table {
+            font-size: 10pt;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        section table thead {
+            display: table-header-group;
+        }
+
+        section table thead th {
+            border-top: 1px solid #9a9a9a;
+            border-bottom: 1px solid #9a9a9a;
+            font-weight: bold;
+            border-collapse: collapse;
+            padding: 2px 4px;
+            text-align: left;
+            background-color: #f7f7f7!important;
+        }
+
+        section table tr:nth-child(even) {
+            background-color: #f7f7f7!important;
+        }
+
+        section table tbody tr {
+            page-break-inside: avoid;
+        }
+
+        section table td {
+            border-bottom: 1px solid #eeeeee;
+            border-collapse: collapse;
+            padding: 2px 4px;
+            text-align: left;
+        }
+
+        section table tfoot {
+            display: table-row-group;
+        }
+
+        .warning {
+            color: red;
+        }
+
+        .noDataInList {
+            color: #666;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <section>
+            <h2>Summary</h2>
+            <div>Name: {{ patient.first_name }} {{ patient.last_name }}</div>
+            <div>Status: {{ patient.status | value_or_none }}</div>
+            <div>DOB: {{ patient.dob | value_or_none }}</div>
+            <div>NHS number: {{ patient.nhs_number | value_or_none }}</div>
+            <div>MRN: {{ patient.hospital_number | value_or_none }}</div>
+            <div>Last visit: {{ latest_visit.visit_date | value_or_none }}</div>
+            <div>BMI: {{ patient.bmi | value_or_none }}</div>
+            <div>Stage: {{ pregnancy.stage | value_or_none }}</div>
+            <div>Diabetes type: {{ patient.diabetes_type | value_or_none }}</div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div>Allowed to text: {% if patient.allowed_to_text %}YES{% else %}NO{% endif %}</div>
+            <div>Phone number: {{ patient.phone_number | value_or_none }}</div>
+            <div>Allowed to email: {% if patient.allowed_to_email %}YES{% else %}NO{% endif %}</div>
+            <div>Email: {{ patient.email_address | value_or_none }}</div>
+            <div>Postcode: {{ patient.personal_address.postcode | value_or_none }}</div>
+            <div>Accessibility: {{ patient.accessibility_considerations | value_or_none }}</div>
+            <div>Other notes: {{ patient.other_notes | value_or_none }}</div>
+        </section>
+
+        <section>
+            <h2>Management</h2>
+            <div>Days per week to take readings: {{ readings_plan.days_per_week_to_take_readings | value_or_none }}</div>
+            <div>Number of readings per day: {{ readings_plan.readings_per_day | value_or_none }}</div>
+            <div>Management strategy: {{ management_plan.management_strategy | value_or_none }}</div>
+            <h3>Breakfast:</h3>
+            <ul>
+                {% for dose in medication_plan.Breakfast %}
+                <li>{{ dose.amount }}
+                    {% if dose.medication_id in medications %}
+                    {{ medications[dose.medication_id].unit }} {{ medications[dose.medication_id].name}}
+                    {% else %}
+                    UNKNOWN MEDICATION ({{dose.medication_id}})
+                    {% endif %}</li>
+                {% else %}
+                <li> N/A </li>
+                {% endfor %}
+            </ul>
+            <h3>Lunch:</h3>
+            <ul>
+                {% for dose in medication_plan.Lunch %}
+                <li> {{ dose.amount }}
+                    {% if dose.medication_id in medications %}
+                    {{ medications[dose.medication_id].unit }} {{ medications[dose.medication_id].name}}
+                    {% else %}
+                    UNKNOWN MEDICATION ({{dose.medication_id}})
+                    {% endif %}</li>
+                {% else %}
+                <li> N/A </li>
+                {% endfor %}
+            </ul>
+            <h3>Evening Meal:</h3>
+            <ul>
+                {% for dose in medication_plan["Evening meal"] %}
+                <li> {{ dose.amount }}
+                    {% if dose.medication_id in medications %}
+                    {{ medications[dose.medication_id].unit }} {{ medications[dose.medication_id].name}}
+                    {% else %}
+                    UNKNOWN MEDICATION ({{dose.medication_id}})
+                    {% endif %}</li>
+                {% else %}
+                <li> N/A </li>
+                {% endfor %}
+            </ul>
+            <h3>Before Bed:</h3>
+            <ul>
+                {% for dose in medication_plan["Before bed"] %}
+                <li> {{ dose.amount }}
+                    {% if dose.medication_id in medications %}
+                    {{ medications[dose.medication_id].unit }} {{ medications[dose.medication_id].name}}
+                    {% else %}
+                    UNKNOWN MEDICATION ({{dose.medication_id}})
+                    {% endif %}</li>
+                {% else %}
+                <li> N/A </li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section>
+            <h2>GDM details</h2>
+            <div>Date of diagnosis: {{ diabetes.diagnosed | value_or_none }}</div>
+            <div>Diagnosis tool: {{ diabetes.diagnosis_tool | value_or_none }}</div>
+            <div>Risk factors: {{ diabetes.risk_factors | value_or_none }}</div>
+            <div>First HbA1c result: {{ diabetes.first_hba1c.value | value_or_none }}</div>
+            <div>First HbA1c date: {{ diabetes.first_hba1c.date | value_or_none }}</div>
+            <div>Latest HbA1c result: {{ diabetes.latest_hba1c.value | value_or_none }}</div>
+            <div>Latest HbA1c date: {{ diabetes.latest_hba1c.date | value_or_none }}</div>
+        </section>
+
+        <section>
+            <h2>Pregnancy details</h2>
+            <div>Estimated delivery date: {{ pregnancy.estimated_delivery_date | value_or_none }}</div>
+            <div>Parity: {{ patient.record.history.parity | value_or_none }}</div>
+            <div>Gravidity: {{ patient.record.history.gravidity | value_or_none}}</div>
+            <div>Number of babies due: {{ pregnancy.expected_number_of_babies | value_or_none }}</div>
+            <div>Planned delivery place: {{ pregnancy.planned_delivery_place | value_or_none }}</div>
+            <div>Height at booking (cm): {{ pregnancy.height_at_booking_in_cm | value_or_none }}</div>
+            <div>Weight at booking (kg): {{ pregnancy.weight_at_booking_in_kg | value_or_none }}</div>
+            <div>Weight at diagnosis (kg): {{ pregnancy.weight_at_diagnosis_in_kg | value_or_none }}</div>
+            <div>Weight at 36 weeks (kg): {{ pregnancy.weight_at_36_weeks_in_kg | value_or_none }}</div>
+            <div>Colostrum harvesting: {% if pregnancy.colostrum_harvesting %}YES{% else %}NO{% endif %}</div>
+        </section>
+
+        <section>
+            <h2>Pregnancy outcomes</h2>
+            <div>Induced: {{ pregnancy.induced | yes_no_not_specified }}</div>
+            <div>Gestational hypertension: {{ pregnancy.gestationalHypertension | yes_no_not_specified }}</div>
+            <div>Pre-eclamsia: {{ pregnancy.preEclampsia | yes_no_not_specified }}</div>
+            <div>Perineal trauma: {{ pregnancy.perinealTrauma | yes_no_not_specified }}</div>
+            <div>Postpartum haemorrhage: {{ pregnancy.postpartumHaemorrhage | yes_no_not_specified }}</div>
+            <div>Postpartum infection: {{ pregnancy.postpartumInfection | yes_no_not_specified }}</div>
+            <div>Postnatal stay length (mother): {{ pregnancy.length_of_postnatal_stay_in_days | value_or_none }}</div>
+            <div>Date of post-natal test: {{ post_natal_reading.date | value_or_none }}</div>
+        </section>
+
+        <section>
+            <h2>Deliveries</h2>
+
+            {% for delivery in deliveries %}
+
+            <subsection>
+                <h3>Delivery {{ loop.index }}</h3>
+                <div>Baby name: {% if delivery.patient.first_name and delivery.patient.last_name %}{{ delivery.patient.first_name
+                    }} {{ delivery.patient.last_name }} {% else %} NOT SPECIFIED {% endif %}</div>
+                <div>Delivery date: {{ delivery.patient.dob | value_or_none}}</div>
+                <div>Sex: {{ delivery.patient.sex | value_or_none }}</div>
+                <div>Birth outcome: {{ delivery.birth_outcome | value_or_none }}</div>
+                <div>Outcome for baby: {{ delivery.outcome_for_baby | value_or_none }}</div>
+                <div>Birth weight: {{ delivery.birth_weight_in_grams | value_or_none }}</div>
+                <div>Admitted to special care unit: {{ delivery.admitted_to_special_baby_care_unit | yes_no_not_specified }}
+                </div>
+                <div>1 minute APGAR: {{ delivery.apgar_1_minute | value_or_none }}</div>
+                <div>5 minute APGAR: {{ delivery.apgar_5_minute | value_or_none }}</div>
+                <div>Hypoglycemia requiring treatment: {{ delivery.hypoglycemia | yes_no_not_specified }}
+                </div>
+                <div>Hyperbilirubinemia requiring treatment: {{ delivery.hyperbilirubinemia | yes_no_not_specified
+                    }}
+                </div>
+                <div>Shoulder dystocia: {{ delivery.shoulderDystocia | yes_no_not_specified }}</div>
+                <div>Bone fracture: {{ delivery.boneFracture | yes_no_not_specified }}</div>
+                <div>Nerve palsy: {{ delivery.nervePalsy | yes_no_not_specified }}</div>
+                <div>Respiratory distress syndrome: {{ delivery.respiratoryDistressSyndrome | yes_no_not_specified }}
+                </div>
+                {% if delivery.neonatal_complications_other %}
+                <div>Other complications: {{ delivery.neonatal_complications_other | value_or_none }}</div>
+                {% endif %}
+                <div>Feeding method: {{ delivery.feeding_method | value_or_none }}</div>
+            </subsection>
+
+            {% else %}
+
+            <h3 class="noDataInList">No deliveries yet</h3>
+
+            {% endfor %}
+        </section>
+
+        <section>
+
+            {% if blood_glucose_readings %}
+            <h2 class="noBoarder">Blood glucose reading history</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Read at</th>
+                        <th>Associated activity</th>
+                        <th>Value</th>
+                        <th>Dose taken</th>
+                        <th>Patient comment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for reading in blood_glucose_readings %}
+                    <tr>
+                        <td class="warning">{% if reading.alert and not reading.alert.dismissed %}⚠{% endif %}</td>
+                        <td>{{ reading.measured_timestamp | format_iso8601_datestring_to_pdf_format }}</td>
+                        {% if reading.prandial_tag %}
+                        <td>{{ reading.prandial_tag.description }}</td>
+                        {% else %}
+                        <td></td>
+                        {% endif %}
+                        <td>{{ reading.blood_glucose_value }} {{ reading.units }}</td>
+                        <td>
+                            {% for dose in reading.doses %}
+                            {{ dose.amount }}
+                            {% if dose.medication_id in medications %}
+                            {{ medications[dose.medication_id].unit }} {{ medications[dose.medication_id].name}}
+                            {% else %}
+                            UNKNOWN MEDICATION ({{dose.medication_id}})
+                            {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td>{{ reading.comment | value_or_none }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            {% else %}
+            <h2>Blood glucose reading history</h2>
+            <h3 class="noDataInList">No readings recorded yet</h3>
+
+            {% endif %}
+        </section>
+
+        <section>
+            {% if patient.record.notes %}
+            <h2 class="noBoarder">Clinician notes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Created</th>
+                        <th>Clinician</th>
+                        <th>Note</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for note in patient.record.notes %}
+                    <tr>
+                        <td>{{ note.created | format_iso8601_datestring_to_pdf_format }}</td>
+                        <td>{{ note.clinician.first_name }} {{ note.clinician.last_name }}, {{ note.clinician.job_title }}</td>
+                        <td>{{ note.content }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <h2>Clinician notes</h2>
+            <h3 class="noDataInList">No clinician notes recorded</h3>
+            {% endif %}
+        </section>
+
+        <section>
+            {% if messages %}
+            <h2 class="noBoarder">Messages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Created</th>
+                        <th>Clinician</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for message in messages %}
+                    {% if message.message_type.uuid in ["DHOS-MESSAGES-GENERAL", "DHOS-MESSAGES-DOSAGE", "DHOS-MESSAGES-DIETARY", "DHOS-MESSAGES-ACTIVATION-CODE"] %}
+                    <tr>
+                        <td>{{ message.created | format_iso8601_datestring_to_pdf_format }}</td>
+                        <td>{% if message.clinician %}{{ message.clinician.first_name }} {{ message.clinician.last_name }}, {{ message.clinician.job_title }}{% endif %}</td>
+                        <td>{{ message.content }}</td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <h2>Messages</h2>
+            <h3 class="noDataInList">No messages recorded</h3>
+            {% endif %}
+        </section>
+    </div>
+</body>
+
+</html>

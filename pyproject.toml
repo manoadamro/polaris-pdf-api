@@ -1,0 +1,87 @@
+[tool.poetry]
+name = "dhos-pdf-api"
+version = "0.0.1"
+description = "DHOS PDF API"
+authors = ["Jonathan Daly <jonathan.daly@sensynehealth.com>"]
+keywords = ["PDF", "BCP"]
+repository = "https://github.com/draysontechnologies/dhos-pdf-api"
+
+[[tool.poetry.source]]
+name = "sensynehealth"
+url = "https://pypi.fury.io/sensynehealth/"
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.10"
+cachetools = "*"
+dicttoxml = "*"
+draymed = "*"
+flask-batteries-included = {version = "3.*", extras = ["apispec", "pgsql"]}
+kombu-batteries-included = "*"
+lxml = "*"
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+pdfkit = "*"
+pytz = "*"
+she-logging = "*"
+
+[tool.poetry.dev-dependencies]
+bandit = "*"
+black = "*"
+coloredlogs = "*"
+coverage = "*"
+isort = "*"
+mock = "*"
+mypy = "*"
+pytest = "*"
+pytest-dhos = {version = "*", extras=["fbi"]}
+pytest-flask = "*"
+pytest-freezegun = "*"
+pytest-mock = "*"
+requests_mock = "*"
+textract = "*"
+sadisplay = "*"
+safety = "*"
+tox = "*"
+types-cachetools = "*"
+types-mock = "*"
+types-pytz = "*"
+types-PyYAML = "*"
+types-requests = "*"
+types-waitress = "*"
+
+[tool.mypy]
+namespace_packages=true
+ignore_missing_imports=false
+disallow_untyped_defs=true
+
+[[tool.mypy.overrides]]
+module = [
+    "requests_mock",
+    "pytest",
+    "environs",
+    "jose",
+    "waitress",
+    "connexion",
+    "pytest_mock",
+    "apispec.*",
+    "apispec_webframeworks.*",
+    "sadisplay",
+    "sqlalchemy.*",
+    "flask_sqlalchemy",
+    "lxml.*",
+    "textract",
+    "pandas",
+    "matplotlib.*",
+    "dicttoxml",
+    "pdfkit"
+]
+ignore_missing_imports = true
+
+[tool.isort]
+profile = "black"
+known_third_party = ["_pytest", "alembic", "apispec", "apispec_webframeworks", "behave", "cachetools", "click", "clients", "connexion", "dicttoxml", "draymed", "environs", "faker", "flask", "flask_batteries_included", "helpers", "jinja2", "jose", "kombu_batteries_included", "lxml", "marshmallow", "matplotlib", "mock", "numpy", "pandas", "pdfkit", "pdfplumber", "pytest", "pytest_mock", "pytz", "reporting", "reportportal_behave", "requests", "requests_mock", "sadisplay", "she_logging", "sqlalchemy", "textract", "waitress", "werkzeug", "yaml"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]

@@ -1,0 +1,209 @@
+{
+    "aggregation_time": "2021-10-21T07:11:34.629+00:00", 
+    "encounter": {
+        "admitted_at": "2021-08-21T00:00:00.000Z", 
+        "created": "2021-10-21T01:34:24.153Z", 
+        "deleted_at": null, 
+        "dh_product": [{
+                "uuid": "6c39e721-9251-485b-b951-f4b03033ccf4"
+        }], 
+        "discharged_at": null, 
+        "encounter_type": "INPATIENT", 
+        "epr_encounter_id": null, 
+        "location_history": [], 
+        "location_uuid": "d889014e-f483-4982-882e-765cfcdbf9e6", 
+        "patient_record_uuid": "51adacf5-863c-48f2-99a6-9dde858f559c", 
+        "patient_uuid": "148a11e4-ec90-4977-9082-0c4302b59f67", 
+        "score_system": "news2", 
+        "score_system_history": [], 
+        "spo2_scale": 1, 
+        "uuid": "f646b905-130e-4f6d-b032-eb28fe2b67a2"
+    }, 
+    "patient": {
+        "accessibility_considerations": [], 
+        "accessibility_considerations_other": null, 
+        "allowed_to_email": null, 
+        "allowed_to_text": false, 
+        "bookmarked": false, 
+        "clinician_bookmark": false, 
+        "created": "2021-08-15T21:18:26.169Z", 
+        "created_by": {
+            "first_name": "Aubrey", 
+            "last_name": "O'Neill", 
+            "uuid": "static_clinician_uuid_D"
+        }, "dh_products": [
+            {
+                "accessibility_discussed": true, 
+                "accessibility_discussed_date": "2021-08-15", 
+                "accessibility_discussed_with": {
+                    "created": "2021-10-21T01:32:03.320Z", 
+                    "email_address": "a.oneill@mail.com", 
+                    "first_name": "Aubrey", 
+                    "job_title": "midwife", 
+                    "last_name": "O'Neill", 
+                    "uuid": "static_clinician_uuid_D"
+                }, 
+                "changes": [], 
+                "closed_date": null, 
+                "closed_reason": null, 
+                "closed_reason_other": null, 
+                "created": "2021-08-15T21:18:26.169Z", 
+                "created_by": {
+                    "first_name": "Aubrey", 
+                    "last_name": "O'Neill", 
+                    "uuid": "static_clinician_uuid_D"
+                }, 
+                "modified": "2021-10-21T01:34:17.692Z", 
+                "modified_by": {
+                    "first_name": "Aubrey", 
+                    "last_name": "O'Neill", 
+                    "uuid": "static_clinician_uuid_D"
+                }, 
+                "monitored_by_clinician": true, 
+                "opened_date": "2021-08-15", 
+                "product_name": "SEND", 
+                "uuid": "6c39e721-9251-485b-b951-f4b03033ccf4"
+            }
+        ], 
+        "dob": "2000-04-23", 
+        "dod": null, 
+        "email_address": "Heidi@email.com", 
+        "ethnicity": "414481008", 
+        "ethnicity_other": null, 
+        "fhir_resource_id": null, 
+        "first_name": "Heidi", 
+        "has_been_bookmarked": false, 
+        "height_in_mm": null, 
+        "highest_education_level": "426769009", 
+        "highest_education_level_other": null, 
+        "hospital_number": "5579713", 
+        "last_name": "Roberts", 
+        "locations": ["static_location_uuid_L2"], 
+        "modified": "2021-10-21T01:34:17.694Z", 
+        "modified_by": {
+            "first_name": "Aubrey", 
+            "last_name": "O'Neill", 
+            "uuid": "static_clinician_uuid_D"
+        }, 
+        "nhs_number": "4516920107", 
+        "other_notes": "", 
+        "personal_addresses": [], 
+        "phone_number": "07123456789", 
+        "record": {
+            "created": "2021-08-15T21:18:26.169Z", 
+            "created_by": {
+                "first_name": "Aubrey", 
+                "last_name": "O'Neill", 
+                "uuid": "static_clinician_uuid_D"
+            }, 
+            "diagnoses": [], 
+            "history": {
+                "created": "2021-10-21T01:34:17.686Z", 
+                "created_by": {
+                    "first_name": "Aubrey", 
+                    "last_name": "O'Neill", 
+                    "uuid": "static_clinician_uuid_D"
+                }, 
+                "gravidity": null, 
+                "modified": "2021-10-21T01:34:17.687Z", 
+                "modified_by": {
+                    "first_name": "Aubrey", 
+                    "last_name": "O'Neill", 
+                    "uuid": "static_clinician_uuid_D"
+                }, "parity": null, 
+                "uuid": "0e2355a4-2fcd-474c-bd13-584121b241c8"
+            }, 
+            "modified": "2021-10-21T01:34:17.686Z", 
+            "modified_by": {
+                "first_name": "Aubrey", 
+                "last_name": "O'Neill", 
+                "uuid": "static_clinician_uuid_D"
+            }, 
+            "notes": [], 
+            "pregnancies": [], 
+            "uuid": "51adacf5-863c-48f2-99a6-9dde858f559c", 
+            "visits": []
+        }, 
+        "sex": "248152002", 
+        "terms_agreement": null, 
+        "uuid": "148a11e4-ec90-4977-9082-0c4302b59f67", 
+        "weight_in_g": null
+    }, 
+    "location": {
+        "active": true, 
+        "address_line_1": null, 
+        "address_line_2": null, 
+        "address_line_3": null, 
+        "address_line_4": null, 
+        "country": null, 
+        "created": "2021-10-21T01:31:38.408Z", 
+        "created_by": "dhos-robot", 
+        "dh_products": [
+            {
+                "closed_date": null, 
+                "created": "2021-10-21T01:31:38.411", 
+                "opened_date": "2017-10-19", 
+                "product_name": "SEND", 
+                "uuid": "37a5044e-b997-42c4-a3bb-c42b9d7e7b2b"
+            }
+        ], 
+        "display_name": "Bed 3", 
+        "locality": null, 
+        "location_type": "229772003", 
+        "modified": "2021-10-21T01:31:38.408Z", 
+        "modified_by": "dhos-robot", 
+        "ods_code": "UL46CWS", 
+        "parent": null,
+        "postcode": null, 
+        "region": null, 
+        "uuid": "d889014e-f483-4982-882e-765cfcdbf9e6"
+    }, 
+    "observation_sets": [
+        {
+            "created": "2021-10-21T07:11:34.335Z", 
+            "created_by": {
+                "uuid": "static_clinician_uuid_B", 
+                "first_name": "Hollie", 
+                "last_name": "White"
+            }, 
+            "empty_set": false, 
+            "encounter_id": "f646b905-130e-4f6d-b032-eb28fe2b67a2", 
+            "is_partial": true, 
+            "location": "d889014e-f483-4982-882e-765cfcdbf9e6", 
+            "modified": "2021-10-21T07:11:34.335Z", 
+            "modified_by": "static_clinician_uuid_B", 
+            "monitoring_instruction": "routine_monitoring", 
+            "observations": [{   
+                "created": "2019-03-04T11:53:22.349Z",
+                "created_by": {
+                    "first_name": "Stan",
+                    "last_name": "Lee",
+                    "uuid": "G"
+                },
+                "measured_time": "2019-03-03T21:09:22.207Z",
+                "modified": "2019-03-04T11:53:22.349Z",
+                "modified_by": {
+                    "first_name": "Stan",
+                    "last_name": "Lee",
+                    "uuid": "G"
+                },
+                "observation_metadata": null,
+                "observation_string": null,
+                "observation_type": "respiratory_rate",
+                "observation_unit": "/min",
+                "observation_value": 7.0,
+                "patient_refused": null,
+                "score_value": 3,
+                "uuid": "effba268-1b4a-405d-849c-6f860d4626a3"
+            }],
+            "record_time": "2019-02-18T12:05:22.207Z",
+            "score_severity": "high",
+            "score_string": "3",
+            "score_system": "news2",
+            "score_value": 3,
+            "spo2_scale": 1,
+            "time_next_obs_set_due": "2019-02-18T12:05:22.207Z",
+            "uuid": "2e64bb99-9b52-45bb-b135-790c6b7ff950"
+        }
+    ]
+}
