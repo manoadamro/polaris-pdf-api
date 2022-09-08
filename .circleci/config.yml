@@ -1,7 +1,4 @@
 version: 2.1
-orbs:
-  azure-acr: circleci/azure-acr@0.1.4
-  ms-teams: cloudradar-monitoring/ms-teams@0.0.1
 jobs:
   test:
     docker:
@@ -14,11 +11,11 @@ jobs:
             sudo apt-get update && sudo apt-get -y install wget xz-utils fontconfig
             postgresql-client openssl build-essential libssl-dev libxrender-dev git-core
             libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev poppler-utils wkhtmltopdf
-      - run: poetry self update
-      - run: poetry config http-basic.sensynehealth ${GEMFURY_DOWNLOAD_KEY} ''
       - run:
           name: Set up tox tests
-          command: pip install --upgrade tox
+          command: |
+            poetry self update
+            pip install --upgrade tox
       - restore_cache:
           keys:
             - v1-poetry-deps-{{ checksum "poetry.lock" }}
@@ -30,73 +27,58 @@ jobs:
           key: v1-poetry-deps-{{ checksum "poetry.lock" }}
           paths:
             - .tox
-      - persist_to_workspace:
-          root: coverage-reports
-          paths:
-            - coverage.xml
   integration-test:
     docker:
-      - image: sensynehealth.azurecr.io/she/circleci-build-image:latest
-        auth:
-          username: $AZURE_SENSYNEHEALTH_ACR_ADMIN_USER
-          password: $AZURE_SENSYNEHEALTH_ACR_ADMIN_USER_PASSWORD
-    environment:
-      REPORT_PORTAL_PROJECT: platform
+      - image: cimg/python:3.9
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
           version: 20.10.7
-      - run:
-          name: Auth with ACR
-          command: source /usr/local/bin/deployment-helpers-v1.sh; authenticateToACR
       - run:
           name: Run the integration test script
           command: .circleci/run_integration_tests.sh
   deploy-dev:
     docker:
-      - image: sensynehealth.azurecr.io/she/circleci-build-image:latest
-        auth:
-          username: $AZURE_SENSYNEHEALTH_ACR_ADMIN_USER
-          password: $AZURE_SENSYNEHEALTH_ACR_ADMIN_USER_PASSWORD
-    environment:
-      K8S_DEV_DEPLOYMENT_NAME: deploy/dhos-pdf-api-dep
-      ACR_REPO_BASE: dhos
+      - image: cimg/python:3.9
     steps:
       - checkout
       - setup_remote_docker:
-          docker_layer_caching: true
           version: 20.10.7
       - run:
           name: Add build information
           command: .circleci/record_build_info.sh
-      - azure-acr/build-and-push-image:
-          checkout: false
-          login-server-name: ${AZURE_LOGIN_SERVER_NAME}
-          registry-name: ${AZURE_REGISTRY_NAME}
-          repo: ${ACR_REPO_BASE}/dhos-pdf-api
-          tag: dev,cb-${CIRCLE_BUILD_NUM},$(git log --pretty=format:'%h' -n 1)
-          extra-build-args: --build-arg GEMFURY_DOWNLOAD_KEY
       - run:
-          name: Deploy to Azure dev environment
-          command: .circleci/deploy_azure_dev.sh
-      - ms-teams/report:
-          only_on_fail: true
-          webhook_url: ${MSTEAMS_NOTIFY_WEBHOOK_URL}
+          name: Build docker image
+          command: docker build . -t polaris-pdf-api
+      - run:
+          name: Tag docker image
+          command: |
+            docker tag polaris-pdf-api ghcr.io/polaris-foundation/polaris-pdf-api:latest
+            docker tag polaris-pdf-api ghcr.io/polaris-foundation/polaris-pdf-api:cb-${CIRCLE_BUILD_NUM}
+            docker tag polaris-pdf-api ghcr.io/polaris-foundation/polaris-pdf-api:$(git log --pretty=format:'%h' -n 1)
+      - run:
+          name: Authenticate to GHCR
+          command: echo $GHCR_TOKEN | docker login ghcr.io -u jonadaly --password-stdin
+      - run:
+          name: Push docker image
+          command: |
+            docker push ghcr.io/polaris-foundation/polaris-pdf-api:latest
+            docker push ghcr.io/polaris-foundation/polaris-pdf-api:cb-${CIRCLE_BUILD_NUM}
+            docker push ghcr.io/polaris-foundation/polaris-pdf-api:$(git log --pretty=format:'%h' -n 1)
 workflows:
   version: 2
   build_test_deploy:
     jobs:
       - test:
-          context: engineering-build
+          context: polaris-foundation
       - integration-test:
-          context: engineering-build
+          context: polaris-foundation
       - deploy-dev:
-          context: dhos-deploy
+          context: polaris-foundation
           requires:
             - test
             - integration-test
           filters:
             branches:
               only:
-                - develop
+                - main

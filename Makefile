@@ -68,7 +68,7 @@ ${gitroot}/.git/hooks/pre-commit: .pre-commit-config.yaml
 install: ${gitroot}/.git/hooks/pre-commit
 endif
 
-TOX_TARGETS=$(shell tox -a)
+TOX_TARGETS=$(shell tox -a | grep -vE '^(using tox|could not|provision)')
 ${TOX_TARGETS}: install
 	tox -e $@
 
