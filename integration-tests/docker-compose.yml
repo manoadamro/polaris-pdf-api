@@ -151,7 +151,7 @@ services:
 
   dhos-pdf-engine:
     container_name: "dhos-pdf-engine"
-    image: ghcr.io/polaris-foundation/polaris-pdf-engine:dev
+    image: ghcr.io/polaris-foundation/polaris-pdf-engine:latest
     environment:
       <<: *COMMON_ENVIRONMENT
     healthcheck:
