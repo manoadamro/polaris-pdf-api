@@ -151,7 +151,7 @@ services:
 
   dhos-pdf-engine:
     container_name: "dhos-pdf-engine"
-    image: sensynehealth.azurecr.io/dhos/dhos-pdf-engine:dev
+    image: ghcr.io/polaris-foundation/polaris-pdf-engine:dev
     environment:
       <<: *COMMON_ENVIRONMENT
     healthcheck:
